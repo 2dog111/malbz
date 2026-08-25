@@ -575,13 +575,13 @@ body {
   align-items: center;
   justify-content: center;
   min-width: 0;
-  transform: translate(-34px, 0);
+  transform: translate(-58px, 0);
 }
 
 .hero__visual picture {
   display: block;
-  width: 104%;
-  max-width: 980px;
+  width: 108%;
+  max-width: 1020px;
 }
 
 .hero__visual img {
