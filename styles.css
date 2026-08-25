@@ -1169,6 +1169,27 @@ h2 {
   stroke-width: 2.4;
 }
 
+.offer-card--direct-balance .direct-balance-copy__scope {
+  margin-top: 18px;
+  padding: 15px 17px;
+  border: 1px solid rgba(77, 133, 136, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.56);
+  color: #3d4758;
+  font-size: 18px;
+  line-height: 1.4;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.direct-balance-copy__scope span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
 .offer-card--direct-balance .direct-balance-copy__hours {
   margin-top: 10px;
   color: #657084;
@@ -1178,19 +1199,28 @@ h2 {
 }
 
 .offer-card--direct-balance .direct-balance-copy__price {
-  display: inline-flex;
+  display: inline-grid;
+  gap: 5px;
+  max-width: 100%;
   margin-top: 24px;
   padding: 12px 16px;
   border: 1px solid rgba(8, 125, 98, 0.16);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.68);
+  color: #657084;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.1;
+  box-shadow:
+    0 12px 26px rgba(45, 58, 74, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.direct-balance-copy__price strong {
   color: #087d62;
   font-size: 36px;
   font-weight: 430;
   line-height: 1;
-  box-shadow:
-    0 12px 26px rgba(45, 58, 74, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.72);
 }
 
 .offer-card--direct-balance .offer-card__telegram {
@@ -3434,12 +3464,25 @@ h2 {
     font-size: 21px;
   }
 
+  .offer-card--direct-balance .direct-balance-copy__scope {
+    padding: 14px;
+    font-size: 17px;
+    line-height: 1.38;
+  }
+
+  .direct-balance-copy__scope span {
+    font-size: 19px;
+  }
+
   .offer-card--direct-balance .direct-balance-copy__hours {
     font-size: 17px;
   }
 
   .offer-card--direct-balance .direct-balance-copy__price {
     margin-top: 20px;
+  }
+
+  .direct-balance-copy__price strong {
     font-size: 30px;
   }
 
@@ -3931,7 +3974,7 @@ h2 {
     font-size: 19px;
   }
 
-  .offer-card--direct-balance .direct-balance-copy__price {
+  .direct-balance-copy__price strong {
     font-size: 27px;
   }
 
