@@ -1244,6 +1244,98 @@ h2 {
   background: linear-gradient(90deg, #12a78f, #38bdf8 48%, rgba(255, 255, 255, 0.08) 82%);
 }
 
+.offer-card--lusiesta {
+  --card-accent: #1688c4;
+  min-height: 0;
+  padding: 30px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0) 44%),
+    linear-gradient(145deg, #edfaff 0%, #edf8f1 52%, #fff6dc 100%);
+  border-color: rgba(22, 136, 196, 0.2);
+  box-shadow:
+    var(--shadow-deal),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.offer-card--lusiesta::before {
+  background: linear-gradient(90deg, #1688c4, #12a78f 48%, #f2c84b 82%);
+}
+
+.lusiesta-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.offer-card--lusiesta .lusiesta-copy :where(p) {
+  max-width: none;
+  margin: 0;
+  color: #3d4758;
+  font-size: 18px;
+  line-height: 1.38;
+}
+
+.offer-card--lusiesta .lusiesta-copy__product {
+  color: var(--ink);
+  font-size: 42px;
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+.lusiesta-copy__product::after {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 2px;
+  margin-top: 16px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1688c4, rgba(22, 136, 196, 0));
+}
+
+.offer-card--lusiesta .lusiesta-copy__headline {
+  margin-top: 20px;
+  color: var(--ink);
+  font-size: 27px;
+  line-height: 1.22;
+  text-wrap: balance;
+}
+
+.offer-card--lusiesta .lusiesta-copy__lead {
+  margin-top: 14px;
+}
+
+.lusiesta-copy__features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.lusiesta-copy__features span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 10px;
+  border: 1px solid rgba(22, 136, 196, 0.16);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.64);
+  color: #285164;
+  font-size: 15px;
+  line-height: 1.15;
+}
+
+.offer-card--lusiesta .lusiesta-copy__license {
+  margin-top: 20px;
+  padding-top: 17px;
+  border-top: 1px solid rgba(21, 28, 42, 0.1);
+}
+
+.offer-card--lusiesta .lusiesta-copy__price {
+  margin-top: 24px;
+  color: var(--money-green);
+  font-size: 46px;
+  line-height: 1;
+}
+
 .telegram-parser-copy {
   position: relative;
   z-index: 1;
@@ -1748,6 +1840,40 @@ h2 {
 .parser-final-cta .parser-telegram-cta {
   flex: 0 0 auto;
   margin-top: 0;
+}
+
+.lusiesta-detail-page .parser-eyebrow {
+  color: #126f99;
+}
+
+.lusiesta-detail-page .parser-modes article,
+.lusiesta-detail-page .lusiesta-notice {
+  border-color: rgba(22, 136, 196, 0.17);
+}
+
+.lusiesta-platforms {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lusiesta-platforms article {
+  min-height: 170px;
+}
+
+.lusiesta-notice {
+  margin: 26px 0 0;
+  padding: 20px 22px;
+  border: 1px solid;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.56);
+  color: #4b5668;
+  font-size: 17px;
+  line-height: 1.46;
+}
+
+.lusiesta-final-cta {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0) 50%),
+    linear-gradient(145deg, #edfaff, #eef8f1 52%, #fff5d9);
 }
 
 .detail-footer {
