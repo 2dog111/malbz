@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title">
+  <title id="title">Telegram Target Parser</title>
+  <defs>
+    <linearGradient id="bg" x1="35" y1="28" x2="280" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FCFF"/>
+      <stop offset="1" stop-color="#EAF7F3"/>
+    </linearGradient>
+    <linearGradient id="plane" x1="102" y1="88" x2="226" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#48C8F4"/>
+      <stop offset="1" stop-color="#167FC1"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#16324A" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect x="18" y="18" width="284" height="284" rx="52" fill="url(#bg)" stroke="#D5E1E5" stroke-width="4"/>
+  <path d="M64 109c28-28 60-42 96-42 42 0 76 18 102 54" fill="none" stroke="#12A78F" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 22"/>
+  <path d="M57 211c27 29 61 43 102 43 34 0 66-12 94-37" fill="none" stroke="#F2C84B" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 22"/>
+  <circle cx="71" cy="99" r="15" fill="#FF785A"/>
+  <circle cx="258" cy="122" r="15" fill="#12A78F"/>
+  <circle cx="63" cy="215" r="15" fill="#F2C84B"/>
+  <g filter="url(#shadow)">
+    <circle cx="160" cy="158" r="84" fill="#FFFFFF" stroke="#C9DADF" stroke-width="4"/>
+    <path d="M99 151.5 223 103c7-2.8 13.7 4 10.5 10.8l-49.8 113.4c-2.8 6.4-11.8 6.7-15 .5l-25.5-49.9-44.1-10.7c-7.5-1.8-7.3-12.8-.1-15.6Z" fill="url(#plane)"/>
+    <path d="m144 177 61-46-45 59-7 31-10-43Z" fill="#E9F8FF"/>
+  </g>
+  <circle cx="230" cy="229" r="43" fill="#FFFFFF" stroke="#16324A" stroke-width="8"/>
+  <path d="m260 260-23-23" stroke="#16324A" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="230" cy="229" r="21" fill="none" stroke="#FF785A" stroke-width="7"/>
+</svg>
