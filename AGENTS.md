@@ -1,5 +1,6 @@
 # Project Rules
 
+- The only domain for this project is `mal.bz`. Treat `mai.bz` and any other similar spelling as a user typo unless the user explicitly introduces a new domain.
 - Keep loaded raster image assets at or below 700 KB. Prefer AVIF/WebP with a lightweight fallback when transparency is needed.
 - For `mal.bz`, Cloudflare is no longer part of deployment or DNS operations because the domain nameservers were moved away from Cloudflare. Use the GitHub repository and our server as the active publishing path unless the user gives a new explicit instruction.
 - Do not rewrite user-supplied offer copy. Preserve wording, punctuation, casing, numbers, and currency notation unless the user explicitly asks to edit the text.
