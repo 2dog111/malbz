@@ -1,6 +1,7 @@
 # Project Rules
 
 - Keep loaded raster image assets at or below 700 KB. Prefer AVIF/WebP with a lightweight fallback when transparency is needed.
+- For `mal.bz`, Cloudflare is no longer part of deployment or DNS operations because the domain nameservers were moved away from Cloudflare. Use the GitHub repository and our server as the active publishing path unless the user gives a new explicit instruction.
 - Do not rewrite user-supplied offer copy. Preserve wording, punctuation, casing, numbers, and currency notation unless the user explicitly asks to edit the text.
 - Keep brand/logo visuals niche-neutral because the site will host offers across different business categories.
 - Offer cards should share a coherent visual system, but they do not need to be the same height or size. Let longer offers have larger cards when the copy needs more room.
