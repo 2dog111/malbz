@@ -1,270 +1,535 @@
 [
   {
-    "id": "MAL-OPENAI-01",
-    "slug": "gpt-5-6-gateway",
-    "category": "ai",
-    "title": "GPT-5.6 API через управляемый шлюз",
-    "outcome": "Отдельный ключ к шлюзу MaL.BZ с лимитами расходов, статистикой и помощью с подключением.",
-    "audience": "Разработчики, владельцы сайтов, агентства, SaaS-сервисы и команды автоматизации.",
-    "currentPrice": null,
-    "billingPeriod": "за 1 млн токенов",
-    "comparisonPrice": {
-      "currency": "USD",
-      "source": "OpenAI",
-      "sol": { "input": 4, "cachedInput": 0.4, "output": 20 },
-      "terra": { "input": 2, "cachedInput": 0.2, "output": 12 },
-      "luna": { "input": 0.2, "cachedInput": 0.02, "output": 1.2 }
-    },
-    "comparisonSource": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
-    "vendor": "MaL.BZ gateway",
-    "resaleModel": "managed_service",
-    "deliveryMethod": "Отдельный ключ к шлюзу MaL.BZ; OpenAI API key и аккаунт OpenAI клиенту не передаются.",
-    "licenseOwner": null,
-    "licenseTerm": null,
-    "supportOwner": "MaL.BZ",
-    "refundTerms": null,
-    "restrictions": [
-      "Standard processing",
-      "short context: до 272 000 входных токенов",
-      "НДС, сервисная наценка, минимальный платёж, SLA, хранение логов и условия возврата уточняются до оплаты"
-    ],
-    "checkedAt": "2026-09-01",
-    "status": "conditions_pending",
-    "proof": [
-      "Официальная документация OpenAI по GPT-5.6 Sol",
-      "Пользовательская конструкция оффера: управляемый шлюз MaL.BZ"
-    ],
-    "telegramMessage": "Здравствуйте. Интересует «GPT-5.6 API через управляемый шлюз», код MAL-OPENAI-01. Подскажите срок запуска и итоговую стоимость.",
-    "riskLevel": "medium"
-  },
-  {
-    "id": "MAL-ADS-SETUP-01",
-    "slug": "yandex-direct-setup",
-    "category": "ads",
-    "title": "Настройка Яндекс Директ и аналитики",
-    "outcome": "Настроенные поисковые кампании, Яндекс Метрика, цели и UTM-метки.",
-    "audience": "Малый бизнес, которому нужен первичный запуск рекламы и аналитики.",
-    "currentPrice": 1500,
-    "billingPeriod": "час работы",
-    "comparisonPrice": null,
-    "comparisonSource": null,
-    "vendor": "MaL.BZ",
-    "resaleModel": "manual_service",
-    "deliveryMethod": "Работа специалиста в рекламном кабинете клиента или согласованном кабинете.",
-    "licenseOwner": null,
-    "licenseTerm": null,
-    "supportOwner": "MaL.BZ",
-    "refundTerms": null,
-    "restrictions": ["Первичная настройка — 2 часа", "Дальнейшие задачи и часы согласуются отдельно"],
-    "checkedAt": "2026-09-01",
-    "status": "published",
-    "proof": ["Текущая утверждённая карточка MaL.BZ"],
-    "telegramMessage": "Здравствуйте. Интересует «Настройка Яндекс Директ и аналитики», код MAL-ADS-SETUP-01. Подскажите срок запуска и итоговую стоимость.",
-    "riskLevel": "low"
-  },
-  {
-    "id": "MAL-WEB-01",
-    "slug": "landing-page",
-    "category": "sites",
-    "title": "Лендинг под одно целевое действие",
-    "outcome": "Готовая посадочная страница со структурой, текстом и дизайном под предложение бизнеса.",
-    "audience": "Малый бизнес и специалисты, которым нужна отдельная страница для заявок.",
-    "currentPrice": 19900,
-    "billingPeriod": "от указанной суммы за проект",
-    "comparisonPrice": null,
-    "comparisonSource": null,
-    "vendor": "MaL.BZ",
-    "resaleModel": "manual_service",
-    "deliveryMethod": "Внедрение под задачу клиента.",
-    "licenseOwner": "Клиент",
-    "licenseTerm": null,
-    "supportOwner": "MaL.BZ",
-    "refundTerms": null,
-    "restrictions": ["Итоговая цена, объём и срок фиксируются до старта"],
-    "checkedAt": "2026-09-01",
-    "status": "published",
-    "proof": ["Цена и позиционирование заданы пользователем 01.09.2026"],
-    "telegramMessage": "Здравствуйте. Интересует «Лендинг под одно целевое действие», код MAL-WEB-01. Подскажите срок запуска и итоговую стоимость.",
-    "riskLevel": "low"
-  },
-  {
-    "id": "MAL-LUSIESTA-01",
-    "slug": "lusiesta-studio",
-    "category": "content",
-    "title": "Управление Android-фермой из одного окна",
-    "outcome": "Планирование публикаций и управление устройствами, прокси, APK и клонами приложений.",
-    "audience": "Команды, которые управляют собственными Android-устройствами и публикациями.",
-    "currentPrice": 12900,
-    "billingPeriod": "1 год",
-    "comparisonPrice": null,
-    "comparisonSource": null,
-    "vendor": "Lusiesta Studio",
-    "resaleModel": null,
-    "deliveryMethod": "Лицензия на один компьютер, до 20 устройств.",
-    "licenseOwner": null,
-    "licenseTerm": "1 год",
-    "supportOwner": null,
-    "refundTerms": null,
-    "restrictions": ["Правила платформ применяются", "Риск блокировки зависит от сценария использования"],
-    "checkedAt": "2026-09-01",
-    "status": "published_with_restrictions",
-    "proof": ["Текущая карточка и отдельная страница продукта MaL.BZ"],
-    "telegramMessage": "Здравствуйте. Интересует «Lusiesta Studio», код MAL-LUSIESTA-01. Подскажите срок запуска и итоговую стоимость.",
-    "riskLevel": "medium"
-  },
-  {
-    "id": "MAL-TG-PARSER-01",
-    "slug": "telegram-target-parser-5",
-    "category": "ai",
-    "title": "Найти Telegram-каналы, чаты и аудиторию",
-    "outcome": "Windows-программа с 8 режимами поиска, AI-подбором ключей и экспортом CSV/XLSX.",
-    "audience": "Маркетологи и владельцы бизнеса, которые исследуют публичные Telegram-площадки.",
-    "currentPrice": 3900,
-    "billingPeriod": "бессрочная лицензия",
-    "comparisonPrice": null,
-    "comparisonSource": null,
-    "vendor": "Telegram Target Parser",
-    "resaleModel": null,
-    "deliveryMethod": "Windows-программа с управлением через Telegram-бота.",
-    "licenseOwner": null,
-    "licenseTerm": "Бессрочно; обновления ветки 5.x",
-    "supportOwner": null,
-    "refundTerms": null,
-    "restrictions": ["Не использовать для спама", "Правила Telegram применяются", "Риск ограничений зависит от сценария использования"],
-    "checkedAt": "2026-09-01",
-    "status": "published_with_restrictions",
-    "proof": ["Текущая карточка и отдельная страница продукта MaL.BZ"],
-    "telegramMessage": "Здравствуйте. Интересует «Telegram Target Parser 5.0», код MAL-TG-PARSER-01. Подскажите срок запуска и итоговую стоимость.",
-    "riskLevel": "medium"
-  },
-  {
     "id": "MAL-ADS-BALANCE-01",
     "slug": "yandex-direct-45000",
     "category": "ads",
-    "title": "45 000 ₽ рекламного баланса и 12 часов специалиста",
-    "outcome": "45 000 ₽ на рекламном балансе и 12 часов работы специалиста за 35 000 ₽.",
-    "audience": null,
-    "currentPrice": 35000,
-    "billingPeriod": "за комплекс",
-    "comparisonPrice": 63000,
-    "comparisonSource": "45 000 ₽ баланса + 12 часов по 1 500 ₽",
-    "vendor": null,
-    "resaleModel": "sale_format_to_confirm",
-    "deliveryMethod": null,
-    "licenseOwner": null,
-    "licenseTerm": null,
-    "supportOwner": "MaL.BZ",
-    "refundTerms": null,
-    "restrictions": [
-      "Не подтверждены владелец кабинета и остатка",
-      "Не описаны документы и источник экономии",
-      "Не описаны перенос, блокировка и возврат остатка",
-      "Не разделены первые 2 и оставшиеся 10 часов"
+    "categoryLabel": "Реклама и аналитика",
+    "priority": 10,
+    "title": "Яндекс Директ под ключ",
+    "shortTitle": "Яндекс Директ под ключ",
+    "oneLineBenefit": "45 000 ₽ рекламного баланса и 12 часов настройки рекламы и аналитики.",
+    "currentPrice": "35 000 ₽",
+    "oldPrice": "63 000 ₽ номинально",
+    "priceSuffix": "за комплекс",
+    "currency": "RUB",
+    "keyFacts": [
+      "45 000 ₽ на рекламном балансе",
+      "12 часов работы специалиста",
+      "Яндекс Метрика, цели и UTM"
     ],
-    "checkedAt": "2026-09-01",
-    "status": "published_with_open_terms",
-    "proof": ["Текущая утверждённая карточка MaL.BZ"],
-    "telegramMessage": "Здравствуйте. Интересует «Яндекс Директ под ключ», код MAL-ADS-BALANCE-01. Подскажите условия получения рекламного баланса и запуска.",
-    "riskLevel": "high"
+    "image": "assets/yandex-balance-icon-v2.webp",
+    "imageAlt": "Яндекс Директ и рекламная аналитика",
+    "ctaLabel": "Пополнить на 45 000 ₽",
+    "telegramMessage": "Здравствуйте. Интересует «Яндекс Директ под ключ» за 35 000 ₽. Код: MAL-ADS-BALANCE-01. Ссылка: https://mal.bz/offers/yandex-direct-45000/",
+    "summary": "За 35 000 руб вы получаете 45 000 руб на рекламном балансе. В стоимость также входит настройка Яндекс Директ и аналитики.",
+    "sections": [
+      {
+        "title": "Что вы получаете",
+        "paragraphs": [
+          "Собираем запросы и минус-слова, строим кампании, пишем объявления, задаём географию и расписание показов.",
+          "Подключаем Яндекс Метрику, цели и UTM-метки, выбираем стратегии и бюджеты. После запуска проверяем поисковые запросы и отключаем нецелевые показы."
+        ],
+        "items": [
+          "45 000 ₽ на рекламном балансе.",
+          "12 часов работы специалиста.",
+          "Настройка Яндекс Директ и аналитики."
+        ]
+      },
+      {
+        "title": "Экономика предложения",
+        "paragraphs": [
+          "45 000 ₽ рекламного баланса плюс 12 часов по ставке 1 500 ₽/час дают номинальную сумму 63 000 ₽. Цена комплекса — 35 000 ₽."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Сколько работы входит в комплекс?",
+        "answer": "В комплекс входят 12 часов работы специалиста."
+      },
+      {
+        "question": "Что настраивается?",
+        "answer": "Кампании, объявления, Метрика, цели, UTM-метки, стратегии и бюджеты."
+      }
+    ],
+    "status": "published"
   },
   {
     "id": "MAL-CHATGPT-PRO-01",
     "slug": "chatgpt-pro-account",
     "category": "ai",
-    "title": "ChatGPT Pro на свежем аккаунте",
-    "outcome": null,
-    "audience": null,
-    "currentPrice": 195,
-    "billingPeriod": "USD за месяц",
-    "comparisonPrice": 200,
-    "comparisonSource": null,
-    "vendor": null,
-    "resaleModel": "sale_format_to_confirm",
-    "deliveryMethod": "Передача логина, пароля и почты",
-    "licenseOwner": null,
-    "licenseTerm": "1 месяц",
-    "supportOwner": null,
-    "refundTerms": null,
-    "restrictions": ["Право на передачу аккаунта не подтверждено"],
-    "checkedAt": "2026-09-01",
-    "status": "published",
-    "proof": [],
-    "telegramMessage": "Здравствуйте. Интересует «ChatGPT Pro на месяц за $195», код MAL-CHATGPT-PRO-01. Подскажите условия получения и продления.",
-    "riskLevel": "high"
+    "categoryLabel": "AI и автоматизация",
+    "priority": 20,
+    "title": "ChatGPT Pro на месяц за $195",
+    "shortTitle": "ChatGPT Pro на месяц за $195",
+    "oneLineBenefit": "Свежий аккаунт с активной Pro-версией ChatGPT и доступом к созданной для вас почте.",
+    "currentPrice": "$195",
+    "oldPrice": "$200",
+    "priceSuffix": "за 1 месяц, в рублях по курсу",
+    "currency": "USD",
+    "keyFacts": [
+      "Передача доступа в течение 24 часов",
+      "Продление того же аккаунта",
+      "Замена при блокировке до 48 часов"
+    ],
+    "image": "assets/chatgpt-pro-icon-v2.webp",
+    "imageAlt": "ChatGPT Pro",
+    "ctaLabel": "Получить ChatGPT Pro",
+    "telegramMessage": "Здравствуйте. Интересует «ChatGPT Pro на месяц за $195». Цена: $195. Код: MAL-CHATGPT-PRO-01. Ссылка: https://mal.bz/offers/chatgpt-pro-account/",
+    "summary": "Получаете свежий аккаунт с активной Pro-версией ChatGPT. Продлевайте тот же аккаунт через нас каждый месяц.",
+    "sections": [
+      {
+        "title": "Как это работает",
+        "steps": [
+          "Оплачиваете месячный пакет.",
+          "В течение 24 часов получаете логин, пароль и полный доступ к специально созданной для вас почте.",
+          "При необходимости продлеваете тот же аккаунт через нас."
+        ]
+      },
+      {
+        "title": "Замена и оплата",
+        "paragraphs": [
+          "При блокировке заменим аккаунт в течение 48 часов.",
+          "Оплата: крипта и перевод."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Можно ли продлить тот же аккаунт?",
+        "answer": "Да, тот же аккаунт можно продлевать через нас каждый месяц."
+      },
+      {
+        "question": "Когда передаётся доступ?",
+        "answer": "В течение 24 часов после оплаты."
+      }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "MAL-OPENAI-01",
+    "slug": "gpt-5-6-gateway",
+    "category": "ai",
+    "categoryLabel": "AI и автоматизация",
+    "priority": 30,
+    "title": "GPT-5.6 API через управляемый шлюз",
+    "shortTitle": "GPT-5.6 API через шлюз",
+    "oneLineBenefit": "Отдельный ключ к шлюзу MaL.BZ, лимиты расходов, статистика и помощь с подключением.",
+    "currentPrice": "Итог в ₽ — до оплаты",
+    "oldPrice": null,
+    "priceSuffix": "",
+    "currency": "RUB",
+    "keyFacts": [
+      "Standard processing",
+      "Short context: до 272 000 входных токенов",
+      "Курс фиксируется на дату оплаты · проверено 01.09.2026"
+    ],
+    "image": "assets/chatgpt-api-icon-v2.webp",
+    "imageAlt": "GPT-5.6 API и управляемый шлюз",
+    "ctaLabel": "Обсудить подключение API",
+    "telegramMessage": "Здравствуйте. Интересует «GPT-5.6 API через управляемый шлюз». Итог в ₽ — до оплаты. Код: MAL-OPENAI-01. Ссылка: https://mal.bz/offers/gpt-5-6-gateway/",
+    "summary": "Клиент получает отдельный ключ к шлюзу MaL.BZ, а также лимиты расходов, статистику использования и помощь с первым подключением.",
+    "sections": [
+      {
+        "title": "Что вы получаете",
+        "items": [
+          "Отдельный ключ к шлюзу MaL.BZ — не OpenAI API key.",
+          "Лимит расходов и статистику использования.",
+          "Помощь с первым подключением.",
+          "Доступ к выбранным моделям GPT-5.6 через шлюз."
+        ],
+        "paragraphs": [
+          "Аккаунт OpenAI и исходный OpenAI API key клиенту не передаются."
+        ]
+      },
+      {
+        "title": "Базовая цена OpenAI",
+        "paragraphs": [
+          "Цена за 1 млн токенов в долларах США. Это базовая цена OpenAI, а не итоговый тариф шлюза MaL.BZ."
+        ],
+        "table": {
+          "headers": ["Модель", "Вход", "Кэшированный вход", "Выход"],
+          "rows": [
+            ["GPT-5.6 Sol", "$4.00", "$0.40", "$20.00"],
+            ["GPT-5.6 Terra", "$2.00", "$0.20", "$12.00"],
+            ["GPT-5.6 Luna", "$0.20", "$0.02", "$1.20"]
+          ]
+        },
+        "source": {
+          "label": "Официальная документация OpenAI",
+          "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+          "note": "Проверено 01.09.2026. Запросы свыше 272 000 входных токенов тарифицируются OpenAI дороже."
+        }
+      },
+    {
+      "title": "Как считается итог",
+      "paragraphs": [
+        "Аккаунт OpenAI и исходный OpenAI API key остаются на стороне управляющего шлюзом MaL.BZ. Клиент получает только отдельный ключ к шлюзу.",
+        "В итоговом расчёте до оплаты отдельно показываются базовое потребление OpenAI, сервисная часть шлюза и статус НДС. Публичной фиксированной наценки и единого рублёвого тарифа нет."
+      ],
+      "steps": [
+          "Выбираем модель и лимит расходов.",
+          "Считаем использование по входным, кэшированным и выходным токенам.",
+          "Курс доллара фиксируется на дату оплаты.",
+          "Итоговый рублёвый тариф сообщается до оплаты."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Что получает клиент?",
+        "answer": "Отдельный ключ к шлюзу MaL.BZ. Исходный OpenAI API key и аккаунт OpenAI не передаются."
+      },
+      {
+        "question": "Когда известна итоговая цена в рублях?",
+        "answer": "Итоговый тариф рассчитывается и сообщается до оплаты."
+      }
+    ],
+    "status": "published"
   },
   {
     "id": "MAL-YA-ACCOUNT-01",
     "slug": "yandex-direct-account",
     "category": "ads",
+    "categoryLabel": "Реклама и аналитика",
+    "priority": 40,
     "title": "Аккаунт Яндекс Директ без НДС",
-    "outcome": null,
-    "audience": null,
-    "currentPrice": 200,
-    "billingPeriod": "USD, заявлено с балансом",
-    "comparisonPrice": null,
-    "comparisonSource": null,
-    "vendor": null,
-    "resaleModel": "sale_format_to_confirm",
-    "deliveryMethod": null,
-    "licenseOwner": null,
-    "licenseTerm": null,
-    "supportOwner": null,
-    "refundTerms": null,
-    "restrictions": ["Не подтверждены документы, владелец кабинета и механизм экономии"],
-    "checkedAt": "2026-09-01",
-    "status": "published_with_open_terms",
-    "proof": [],
-    "telegramMessage": "Здравствуйте. Интересует «Аккаунт Яндекс Директ без НДС», код MAL-YA-ACCOUNT-01. Подскажите условия оформления и получения доступа.",
-    "riskLevel": "high"
+    "shortTitle": "Аккаунт Яндекс Директ без НДС",
+    "oneLineBenefit": "Оформляем на себя или на вас. Доступ к аккаунту только у вас.",
+    "currentPrice": "200 $",
+    "oldPrice": null,
+    "saving": "Экономия 22%",
+    "priceSuffix": "с рекламным балансом 200 $",
+    "currency": "USD",
+    "keyFacts": [
+      "200 $ на рекламном балансе",
+      "Оформление на нас или на вас",
+      "Доступ к аккаунту только у вас"
+    ],
+    "image": "assets/yandex-account-icon-v2.webp",
+    "imageAlt": "Аккаунт Яндекс Директ",
+    "ctaLabel": "Получить аккаунт",
+    "telegramMessage": "Здравствуйте. Интересует «Аккаунт Яндекс Директ без НДС» за 200 $ с рекламным балансом 200 $. Код: MAL-YA-ACCOUNT-01. Ссылка: https://mal.bz/offers/yandex-direct-account/",
+    "summary": "Оформляем аккаунт на себя или на вас. Доступ к аккаунту только у вас.",
+    "sections": [
+      {
+        "title": "Что вы получаете",
+        "paragraphs": [
+          "Цена аккаунта — 200 $. Эти 200 $ лежат на рекламном балансе кабинета.",
+          "Вариант оформления — на нас или на вас. Доступ к аккаунту только у вас."
+        ],
+        "items": [
+          "Аккаунт Яндекс Директ.",
+          "200 $ на рекламном балансе.",
+          "Заявленная экономия — 22%."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "На кого оформляется аккаунт?",
+        "answer": "Аккаунт можно оформить на нас или на вас."
+      },
+      {
+        "question": "Кто получает доступ?",
+        "answer": "Доступ к аккаунту только у вас."
+      }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "MAL-ADS-SETUP-01",
+    "slug": "yandex-direct-setup",
+    "category": "ads",
+    "categoryLabel": "Реклама и аналитика",
+    "priority": 50,
+    "title": "Запустим поисковую рекламу и аналитику за 2 часа",
+    "shortTitle": "Настройка рекламы и аналитики",
+    "oneLineBenefit": "Настроим кампании, Метрику, цели и UTM, затем покажем выполненную работу в отчёте.",
+    "currentPrice": "1 500 ₽",
+    "oldPrice": null,
+    "priceSuffix": "за час работы",
+    "currency": "RUB",
+    "keyFacts": [
+      "Первичная настройка за 2 часа",
+      "Яндекс Метрика, цели и UTM",
+      "Отчёт по выполненной работе"
+    ],
+    "image": "assets/ads-setup-icon-v2.webp",
+    "imageAlt": "Настройка поисковой рекламы и аналитики",
+    "ctaLabel": "Заказать настройку",
+    "telegramMessage": "Здравствуйте. Интересует «Запустим поисковую рекламу и аналитику за 2 часа». Цена: 1 500 ₽/час. Код: MAL-ADS-SETUP-01. Ссылка: https://mal.bz/offers/yandex-direct-setup/",
+    "summary": "Поисковые кампании, Яндекс Метрика, цели и UTM. Работу и выполненные задачи фиксируем в отчёте.",
+    "sections": [
+      {
+        "title": "Первые 2 часа",
+        "items": [
+          "Собираем запросы и минус-слова.",
+          "Строим поисковые кампании и пишем объявления.",
+          "Задаём географию и расписание показов.",
+          "Подключаем Яндекс Метрику, цели и UTM-метки.",
+          "Выбираем начальные стратегии и бюджеты."
+        ]
+      },
+      {
+        "title": "Дальнейшая работа",
+        "paragraphs": [
+          "После запуска проверяем поисковые запросы, отключаем нецелевые показы и выполняем следующие согласованные задачи.",
+          "Дополнительное время оплачивается по ставке 1 500 ₽/час."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Что входит в первые 2 часа?",
+        "answer": "Первичная настройка кампаний и аналитики: запросы, объявления, география, Метрика, цели, UTM и начальные стратегии."
+      },
+      {
+        "question": "Как оплачивается дальнейшая работа?",
+        "answer": "По ставке 1 500 ₽ за час по согласованным задачам."
+      }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "MAL-WEB-01",
+    "slug": "landing-page",
+    "category": "services",
+    "categoryLabel": "Сайты и услуги",
+    "priority": 60,
+    "title": "Лендинг под одно целевое действие",
+    "shortTitle": "Лендинг под одно действие",
+    "oneLineBenefit": "Структура, текст, дизайн и адаптивная вёрстка под аудиторию и предложение бизнеса.",
+    "currentPrice": "от 19 900 ₽",
+    "oldPrice": null,
+    "priceSuffix": "за проект",
+    "currency": "RUB",
+    "keyFacts": [
+      "Структура и текст под аудиторию",
+      "Адаптивный дизайн",
+      "Один понятный путь до заявки"
+    ],
+    "image": "assets/landing-studio-icon-v2.webp",
+    "imageAlt": "Разработка лендинга",
+    "ctaLabel": "Заказать лендинг",
+    "telegramMessage": "Здравствуйте. Интересует «Лендинг под одно целевое действие» от 19 900 ₽. Код: MAL-WEB-01. Ссылка: https://mal.bz/offers/landing-page/",
+    "summary": "Готовая посадочная страница со структурой, текстом и дизайном под предложение бизнеса.",
+    "sections": [
+      {
+        "title": "Что вы получаете",
+        "items": [
+          "Структуру страницы под аудиторию и предложение.",
+          "Текст, который ведёт к одному целевому действию.",
+          "Дизайн и адаптивную вёрстку.",
+          "Согласованный путь до заявки или другого целевого действия."
+        ]
+      },
+      {
+        "title": "Как начинается работа",
+        "steps": [
+          "Показываете текущий сайт или описываете задачу.",
+          "Согласуем объём, итоговую цену и срок.",
+          "Собираем страницу вокруг одного целевого действия."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Что входит в стартовую цену?",
+        "answer": "Точный состав зависит от согласованного объёма проекта и фиксируется до начала работы."
+      }
+    ],
+    "status": "published"
   },
   {
     "id": "MAL-LIVID-01",
     "slug": "livid",
-    "category": "content",
-    "title": "Livid",
-    "outcome": "Видео без рекламы и чужих рекомендаций.",
-    "audience": null,
-    "currentPrice": 11000,
-    "billingPeriod": "заявленная пожизненная лицензия",
-    "comparisonPrice": null,
-    "comparisonSource": null,
-    "vendor": "Livid",
-    "resaleModel": "sale_format_to_confirm",
-    "deliveryMethod": null,
-    "licenseOwner": null,
-    "licenseTerm": "Lifetime",
-    "supportOwner": null,
-    "refundTerms": null,
-    "restrictions": ["Письменное разрешение на перепродажу не подтверждено"],
-    "checkedAt": "2026-09-01",
-    "status": "published",
-    "proof": [],
-    "telegramMessage": "Здравствуйте. Интересует «Livid», код MAL-LIVID-01. Подскажите условия получения пожизненной лицензии.",
-    "riskLevel": "high"
+    "category": "software",
+    "categoryLabel": "Софт",
+    "priority": 70,
+    "title": "Видео без рекламы и чужих рекомендаций — Livid",
+    "shortTitle": "Видео без рекламы — Livid",
+    "oneLineBenefit": "Плеер показывает только ваше видео, а оформление, доступ и просмотр остаются под вашим контролем.",
+    "currentPrice": "11 000 ₽",
+    "oldPrice": null,
+    "priceSuffix": "пожизненная лицензия",
+    "currency": "RUB",
+    "keyFacts": [
+      "500 ГБ хранения",
+      "2 ТБ трафика в месяц",
+      "4K и встраивание на сайт"
+    ],
+    "image": "assets/livid-video-icon-v2.webp",
+    "imageAlt": "Видеоплеер Livid",
+    "ctaLabel": "Получить Livid",
+    "telegramMessage": "Здравствуйте. Интересует «Видео без рекламы и чужих рекомендаций — Livid». Цена: 11 000 ₽, пожизненная лицензия. Код: MAL-LIVID-01. Ссылка: https://mal.bz/offers/livid/",
+    "summary": "Показывайте видео без рекламы, чужих рекомендаций и отвлекающих элементов.",
+    "sections": [
+      {
+        "title": "Что вы получаете",
+        "items": [
+          "500 ГБ хранения и 2 ТБ трафика в месяц.",
+          "Видео в 4K и встраивание на сайт.",
+          "Свой логотип и полную настройку плеера."
+        ]
+      },
+      {
+        "title": "Все возможности",
+        "collapsible": true,
+        "items": [
+          "Закрытые ссылки и защита паролем.",
+          "Замена видео без изменения ссылки.",
+          "Комментарии с привязкой ко времени.",
+          "Автоматические транскрипции.",
+          "Без логотипа Livid.",
+          "Пожизненные обновления Pro-тарифа."
+        ]
+      }
+    ],
+    "faq": [],
+    "status": "published"
   },
   {
     "id": "MAL-SENDFOX-01",
     "slug": "sendfox",
-    "category": "content",
-    "title": "SendFox",
-    "outcome": "Рассылки, формы подписки и автоматические цепочки.",
-    "audience": null,
-    "currentPrice": 6500,
-    "billingPeriod": "заявленный пожизненный доступ",
-    "comparisonPrice": 29000,
-    "comparisonSource": null,
-    "vendor": "SendFox",
-    "resaleModel": "sale_format_to_confirm",
-    "deliveryMethod": null,
-    "licenseOwner": null,
-    "licenseTerm": "Lifetime",
-    "supportOwner": null,
-    "refundTerms": null,
-    "restrictions": ["Письменное разрешение на перепродажу и источник сравнения цен не подтверждены"],
-    "checkedAt": "2026-09-01",
-    "status": "published",
-    "proof": [],
-    "telegramMessage": "Здравствуйте. Интересует «SendFox», код MAL-SENDFOX-01. Подскажите условия получения пожизненного доступа.",
-    "riskLevel": "high"
+    "category": "software",
+    "categoryLabel": "Софт",
+    "priority": 80,
+    "title": "SendFox — email-маркетинг без ежемесячной оплаты",
+    "shortTitle": "SendFox без ежемесячной оплаты",
+    "oneLineBenefit": "Рассылки, формы подписки и автоматические цепочки писем для регулярной связи с аудиторией.",
+    "currentPrice": "6 500 ₽",
+    "oldPrice": "29 000 ₽",
+    "priceSuffix": "пожизненный доступ",
+    "currency": "RUB",
+    "keyFacts": [
+      "5 000 контактов",
+      "300 000 отправок",
+      "API и более 30 интеграций"
+    ],
+    "image": "assets/sendfox-email-icon-v2.webp",
+    "imageAlt": "Email-маркетинг SendFox",
+    "ctaLabel": "Получить SendFox",
+    "telegramMessage": "Здравствуйте. Интересует «SendFox — email-маркетинг без ежемесячной оплаты». Цена: 6 500 ₽, пожизненный доступ. Код: MAL-SENDFOX-01. Ссылка: https://mal.bz/offers/sendfox/",
+    "summary": "Собирайте подписчиков, отправляйте письма, запускайте автоматические серии и следите за ростом базы.",
+    "sections": [
+      {
+        "title": "Что можно делать",
+        "paragraphs": [
+          "Создайте страницу подписки, добавьте форму на сайт, отправьте разовую рассылку или настройте автоматическую цепочку писем.",
+          "Используйте сервис для новостей, прогрева аудитории, анонсов, запусков, повторных касаний и лид-магнитов."
+        ]
+      },
+      {
+        "title": "Что входит",
+        "collapsible": true,
+        "items": [
+          "5 000 контактов и 300 000 отправок.",
+          "Пожизненный доступ и будущие обновления плана.",
+          "Неограниченные автоматические цепочки.",
+          "Неограниченные страницы и формы подписки.",
+          "Редактор писем без кода и отправка по расписанию.",
+          "Статистика открытий, переходов и роста базы.",
+          "Проверка качества и улучшенная доставка.",
+          "Списки и группы подписчиков, встраивание форм на сайт.",
+          "API и более 30 интеграций.",
+          "Галерея страниц подписки.",
+          "60 дней на возврат."
+        ]
+      }
+    ],
+    "faq": [],
+    "status": "published"
+  },
+  {
+    "id": "MAL-LUSIESTA-01",
+    "slug": "lusiesta-studio",
+    "category": "software",
+    "categoryLabel": "Софт",
+    "priority": 90,
+    "title": "Управление Android-фермой из одного окна",
+    "shortTitle": "Управление Android-фермой",
+    "oneLineBenefit": "Планируйте публикации и управляйте устройствами, прокси, APK и клонами приложений.",
+    "currentPrice": "12 900 ₽",
+    "oldPrice": null,
+    "priceSuffix": "на 1 год",
+    "currency": "RUB",
+    "keyFacts": [
+      "1 компьютер",
+      "До 20 устройств",
+      "Автопостинг, прокси, APK и клоны"
+    ],
+    "image": "assets/lusiesta-farm-icon-v2.webp",
+    "imageAlt": "Lusiesta Studio для Android-фермы",
+    "ctaLabel": "Получить Lusiesta Studio",
+    "telegramMessage": "Здравствуйте. Интересует «Управление Android-фермой из одного окна». Цена: 12 900 ₽ на 1 год. Код: MAL-LUSIESTA-01. Ссылка: https://mal.bz/offers/lusiesta-studio/",
+    "summary": "Подключайте телефоны, планируйте публикации и управляйте прокси, APK и клонами приложений из одного окна.",
+    "sections": [
+      {
+        "title": "Что вы получаете",
+        "items": [
+          "Автопостинг и планирование публикаций.",
+          "Управление прокси, APK и клонами приложений.",
+          "Лицензию на один компьютер и до 20 устройств.",
+          "Срок лицензии — 1 год."
+        ]
+      },
+      {
+        "title": "Как начать",
+        "steps": [
+          "Опишите количество устройств и рабочий сценарий.",
+          "Согласуйте запуск.",
+          "Получите лицензию и подключите устройства."
+        ]
+      }
+    ],
+    "faq": [],
+    "status": "published"
+  },
+  {
+    "id": "MAL-TG-PARSER-01",
+    "slug": "telegram-target-parser-5",
+    "category": "software",
+    "categoryLabel": "Софт и автоматизация",
+    "priority": 100,
+    "title": "Telegram Target Parser 5.0",
+    "shortTitle": "Telegram Target Parser 5.0",
+    "oneLineBenefit": "Находит релевантные Telegram-каналы, чаты и активную аудиторию по описанию задачи.",
+    "currentPrice": "3 900 ₽",
+    "oldPrice": null,
+    "priceSuffix": "бессрочная лицензия",
+    "currency": "RUB",
+    "keyFacts": [
+      "8 режимов поиска и Deep Search",
+      "Windows + Telegram-бот",
+      "Обновления ветки 5.x"
+    ],
+    "image": "assets/telegram-parser-icon-v2.webp",
+    "imageAlt": "Telegram Target Parser 5.0",
+    "ctaLabel": "Купить за 3 900 ₽",
+    "telegramMessage": "Здравствуйте. Интересует «Telegram Target Parser 5.0» за 3 900 ₽. Код: MAL-TG-PARSER-01. Ссылка: https://mal.bz/offers/telegram-target-parser-5/",
+    "summary": "Опишите, кого нужно найти. Программа расширит запросы, подберёт направления поиска и соберёт релевантные площадки и аудиторию.",
+    "sections": [
+      {
+        "title": "Что вы получаете",
+        "items": [
+          "Windows-программу с управлением через Telegram-бота.",
+          "Восемь режимов поиска и Deep Search.",
+          "AI-подбор ключевых слов.",
+          "Экспорт результатов в CSV и XLSX.",
+          "Подробное руководство и обновления ветки 5.x."
+        ]
+      },
+      {
+        "title": "Как это работает",
+        "steps": [
+          "Описываете, кого нужно найти.",
+          "Программа расширяет запросы и подбирает направления поиска.",
+          "Получаете релевантные площадки и аудиторию с экспортом в CSV или XLSX."
+        ]
+      }
+    ],
+    "faq": [],
+    "status": "published"
   }
 ]

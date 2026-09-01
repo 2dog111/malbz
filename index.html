@@ -3,386 +3,284 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MaL.BZ — инструменты и услуги для малого бизнеса</title>
-    <meta name="description" content="Софт, AI, реклама и внедрение для малого бизнеса: цена, способ получения, срок, ограничения и поддержка по каждому предложению.">
+    <title>MaL.BZ — софт, реклама и услуги для малого бизнеса</title>
+    <meta name="description" content="Софт, реклама и услуги для малого бизнеса по специальным ценам. Выберите предложение и сразу напишите по нему в Telegram.">
     <link rel="canonical" href="https://mal.bz/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="MaL.BZ — инструменты и услуги для малого бизнеса">
-    <meta property="og:description" content="Проверяем цену, способ получения, ограничения и поддержку по каждому предложению.">
+    <meta property="og:title" content="MaL.BZ — софт, реклама и услуги для малого бизнеса">
+    <meta property="og:description" content="Софт, реклама и услуги для малого бизнеса по специальным ценам. Выберите предложение и сразу напишите по нему в Telegram.">
     <meta property="og:url" content="https://mal.bz/">
     <meta property="og:image" content="https://mal.bz/assets/hero-marketplace-pencil-v2.png">
     <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    <link rel="stylesheet" href="market.css">
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "MaL.BZ",
-        "url": "https://mal.bz/",
-        "description": "Инструменты и услуги для малого бизнеса — с понятной экономикой."
-      }
-    </script>
-    <script src="assets/site.js?v=20260901" defer></script>
+    <link rel="preload" href="assets/fonts/onest-cyrillic-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="market.css?v=20260901-2">
+    <script src="assets/site.js?v=20260901-2" defer></script>
   </head>
-  <body>
+  <body data-page="home">
     <a class="skip-link" href="#offers">К предложениям</a>
-
     <header class="site-header">
       <a class="brand" href="/" aria-label="MaL.BZ — главная">
-        <img src="assets/malbz-logo.png" alt="" width="56" height="56">
+        <img src="assets/malbz-logo.png" alt="" width="46" height="46">
         <span>MaL.BZ</span>
       </a>
-      <a
-        class="header-link js-telegram"
-        href="https://t.me/am7am"
-        data-message="Здравствуйте. Хочу предложить оффер для MaL.BZ. Подскажите требования к публикации."
-        data-event="supplier_submit"
-        data-offer-id="supplier"
-      >Предложить свой оффер</a>
+      <a class="header-link" href="#offers">Все предложения</a>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <p class="eyebrow">MaL.BZ</p>
-        <h1 id="hero-title">Инструменты и услуги для малого бизнеса — с понятной экономикой</h1>
-        <p class="hero__lead">Софт, AI, реклама и внедрение. Для каждого предложения показываем цену, способ получения, срок, ограничения и кто отвечает за поддержку.</p>
-        <div class="hero__actions">
-          <a class="button button--primary" href="#offers">Смотреть предложения</a>
-          <a
-            class="button js-telegram"
-            href="https://t.me/am7am"
-            data-message="Здравствуйте. Хочу предложить оффер для MaL.BZ. Подскажите требования к публикации."
-            data-event="supplier_submit"
-            data-offer-id="supplier"
-          >Предложить свой оффер</a>
-        </div>
-        <ul class="trust-line" aria-label="Что указываем в предложениях">
-          <li>Цена проверена</li>
-          <li>Условия получения</li>
-          <li>Возврат и замена</li>
-          <li>Поддержка</li>
-        </ul>
+        <h1 id="hero-title">Софт, реклама и услуги для малого бизнеса — по специальным ценам</h1>
+        <p class="hero__lead">Выберите предложение, посмотрите условия и сразу напишите по нему в Telegram.</p>
+        <a class="button button--primary hero__button" href="#offers">Смотреть предложения</a>
       </section>
 
-      <section class="section" aria-labelledby="featured-title">
-        <div class="section-heading">
-          <p class="eyebrow">Короткий путь</p>
-          <h2 id="featured-title">Рекомендуем начать с этого</h2>
+      <section class="catalog" id="offers" aria-labelledby="offers-title">
+        <div class="catalog__heading">
+          <div>
+            <p class="eyebrow">10 предложений</p>
+            <h2 id="offers-title">Выберите подходящий оффер</h2>
+          </div>
+          <p>Цена и главное условие видны сразу. Подробности — на странице предложения.</p>
         </div>
-        <div class="featured-grid">
-          <article class="offer-card offer-card--featured" data-offer-id="MAL-ADS-SETUP-01" data-category="ads" data-price="1500-rub-hour">
-            <div class="offer-card__head">
-              <img src="assets/ads-setup-icon-v2.webp" alt="" width="64" height="64">
-              <span class="offer-card__type">Ручная услуга</span>
-            </div>
-            <h3>Запустить Яндекс Директ и аналитику</h3>
-            <p>Первичная настройка занимает 2 часа. Дальнейшая работа оплачивается по фактическому времени.</p>
-            <p class="offer-card__price">1 500 ₽/час</p>
-            <ul class="offer-card__facts">
-              <li>Кампании, Метрика, цели и UTM</li>
-              <li>Отчёт по выполненной работе</li>
-              <li>Цена проверена 01.09.2026</li>
-            </ul>
-            <a class="text-link" href="offers/yandex-direct-setup/" data-event="offer_details">Условия и состав работы</a>
-          </article>
-
-          <article class="offer-card offer-card--featured" data-offer-id="MAL-WEB-01" data-category="sites services" data-price="from-19900-rub">
-            <div class="offer-card__head">
-              <img src="assets/landing-studio-icon-v2.webp" alt="" width="64" height="64">
-              <span class="offer-card__type">Ручная услуга</span>
-            </div>
-            <h3>Лендинг, который ведёт к заявке</h3>
-            <p>Структура, текст и дизайн под одно целевое действие. Объём и срок фиксируем до начала работы.</p>
-            <p class="offer-card__price">от 19 900 ₽</p>
-            <ul class="offer-card__facts">
-              <li>Цена зависит от согласованного объёма</li>
-              <li>Результат — готовая посадочная страница</li>
-              <li>Цена проверена 01.09.2026</li>
-            </ul>
-            <a class="text-link" href="offers/landing-page/" data-event="offer_details">Посмотреть условия</a>
-          </article>
-
-          <article class="offer-card offer-card--featured" data-offer-id="MAL-OPENAI-01" data-category="ai" data-price="quote-before-payment">
-            <div class="offer-card__head">
-              <img src="assets/chatgpt-api-icon-v2.webp" alt="" width="64" height="64">
-              <span class="offer-card__type">Управляемый сервис</span>
-            </div>
-            <h3>GPT‑5.6 API через управляемый шлюз</h3>
-            <p>Отдельный ключ к шлюзу MaL.BZ, лимиты расходов, статистика и помощь с подключением.</p>
-            <p class="offer-card__price">Итог в ₽ — до оплаты</p>
-            <ul class="offer-card__facts">
-              <li>Standard / short context</li>
-              <li>Не передаём OpenAI API key</li>
-              <li>Тариф проверен 01.09.2026</li>
-            </ul>
-            <a class="text-link" href="offers/gpt-5-6-gateway/" data-event="offer_details">Тарифы и ограничения</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="offers" aria-labelledby="offers-title">
-        <div class="section-heading">
-          <p class="eyebrow">Витрина</p>
-          <h2 id="offers-title">Все предложения</h2>
-        </div>
-        <div class="filters" aria-label="Фильтр предложений">
-          <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">Все</button>
-          <button type="button" class="filter" data-filter="ai" aria-pressed="false">AI и автоматизация</button>
-          <button type="button" class="filter" data-filter="sites" aria-pressed="false">Сайты и хостинг</button>
-          <button type="button" class="filter" data-filter="ads" aria-pressed="false">Реклама и аналитика</button>
-          <button type="button" class="filter" data-filter="sales" aria-pressed="false">Продажи и CRM</button>
-          <button type="button" class="filter" data-filter="content" aria-pressed="false">Контент и коммуникации</button>
-          <button type="button" class="filter" data-filter="services" aria-pressed="false">Услуги</button>
-        </div>
-
-        <p class="filter-result" role="status" aria-live="polite">Показано 10 предложений</p>
         <div class="offer-grid">
-          <article class="offer-card" data-offer-id="MAL-ADS-BALANCE-01" data-category="ads" data-price="35000-rub-package">
+          <article class="offer-card" id="offer-MAL-ADS-BALANCE-01" data-offer-id="MAL-ADS-BALANCE-01" data-offer-title="Яндекс Директ под ключ" data-category="ads" data-price="35 000 ₽ за комплекс">
             <div class="offer-card__head">
-              <img src="assets/yandex-balance-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
-              <span class="offer-card__type">Комплекс</span>
+              <img src="assets/yandex-balance-icon-v2.webp" alt="Яндекс Директ и рекламная аналитика" width="64" height="64" loading="eager" fetchpriority="high" decoding="async">
+              <span class="offer-card__category">Реклама и аналитика</span>
             </div>
             <h3>Яндекс Директ под ключ</h3>
-            <p>45 000 ₽ на рекламном балансе и 12 часов работы специалиста.</p>
-            <p class="offer-card__price">35 000 ₽ за комплекс</p>
+            <p class="offer-card__benefit">45 000 ₽ рекламного баланса и 12 часов настройки рекламы и аналитики.</p>
+            <div class="offer-card__price-row">
+              <p class="offer-card__price">35 000 ₽<small>за комплекс</small></p>
+              <span class="offer-card__old-price">63 000 ₽ номинально</span>
+            </div>
             <ul class="offer-card__facts">
-              <li>45 000 ₽ рекламного баланса</li>
+              <li>45 000 ₽ на рекламном балансе</li>
               <li>12 часов работы специалиста</li>
-              <li>Настройка рекламы и аналитики</li>
-              <li>Проверено 01.09.2026</li>
+              <li>Яндекс Метрика, цели и UTM</li>
             </ul>
             <div class="offer-card__actions">
-              <a class="button button--small" href="offers/yandex-direct-45000/" data-event="offer_details">Подробнее</a>
-              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «Яндекс Директ под ключ», код MAL-ADS-BALANCE-01. Подскажите условия получения рекламного баланса и запуска." data-event="telegram_click">Обсудить запуск</a>
+              <a href="https://t.me/am7am" class="button button--primary js-telegram" data-message="Здравствуйте. Интересует «Яндекс Директ под ключ» за 35 000 ₽. Код: MAL-ADS-BALANCE-01. Ссылка: https://mal.bz/offers/yandex-direct-45000/" data-event="offer_telegram_click" data-offer-id="MAL-ADS-BALANCE-01" data-offer-title="Яндекс Директ под ключ" data-category="ads" data-price="35 000 ₽ за комплекс" data-cta-location="home_card">Пополнить на 45 000 ₽</a>
+              <a class="offer-card__details" href="offers/yandex-direct-45000/" data-event="offer_details_click" data-offer-id="MAL-ADS-BALANCE-01" data-offer-title="Яндекс Директ под ключ" data-category="ads" data-price="35 000 ₽ за комплекс" data-cta-location="home_card">Подробнее</a>
             </div>
           </article>
-
-          <article class="offer-card" data-offer-id="MAL-CHATGPT-PRO-01" data-category="ai" data-price="195-usd-month">
+          <article class="offer-card" id="offer-MAL-CHATGPT-PRO-01" data-offer-id="MAL-CHATGPT-PRO-01" data-offer-title="ChatGPT Pro на месяц за $195" data-category="ai" data-price="$195 за 1 месяц, в рублях по курсу">
             <div class="offer-card__head">
-              <img src="assets/chatgpt-pro-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
-              <span class="offer-card__type">Подписка на аккаунте</span>
+              <img src="assets/chatgpt-pro-icon-v2.webp" alt="ChatGPT Pro" width="64" height="64" loading="lazy" decoding="async">
+              <span class="offer-card__category">AI и автоматизация</span>
             </div>
-            <h3>ChatGPT Pro на месяц за $195 в рублях по курсу</h3>
-            <p>Свежий аккаунт с активной Pro‑версией ChatGPT и доступом к созданной для вас почте.</p>
-            <p class="offer-card__price">$195 за 1 месяц</p>
+            <h3>ChatGPT Pro на месяц за $195</h3>
+            <p class="offer-card__benefit">Свежий аккаунт с активной Pro-версией ChatGPT и доступом к созданной для вас почте.</p>
+            <div class="offer-card__price-row">
+              <p class="offer-card__price">$195<small>за 1 месяц, в рублях по курсу</small></p>
+              <span class="offer-card__old-price">$200</span>
+            </div>
             <ul class="offer-card__facts">
-              <li>Стандартная цена: $200 в месяц</li>
-              <li>Передача в течение 24 часов</li>
-              <li>Замена при блокировке — до 48 часов</li>
-              <li>Оплата: крипта и перевод</li>
+              <li>Передача доступа в течение 24 часов</li>
+              <li>Продление того же аккаунта</li>
+              <li>Замена при блокировке до 48 часов</li>
             </ul>
             <div class="offer-card__actions">
-              <a class="button button--small" href="offers/chatgpt-pro-account/" data-event="offer_details">Подробнее</a>
-              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «ChatGPT Pro на месяц за $195», код MAL-CHATGPT-PRO-01. Подскажите условия получения и продления." data-event="telegram_click">Уточнить получение</a>
+              <a href="https://t.me/am7am" class="button button--primary js-telegram" data-message="Здравствуйте. Интересует «ChatGPT Pro на месяц за $195». Цена: $195. Код: MAL-CHATGPT-PRO-01. Ссылка: https://mal.bz/offers/chatgpt-pro-account/" data-event="offer_telegram_click" data-offer-id="MAL-CHATGPT-PRO-01" data-offer-title="ChatGPT Pro на месяц за $195" data-category="ai" data-price="$195 за 1 месяц, в рублях по курсу" data-cta-location="home_card">Получить ChatGPT Pro</a>
+              <a class="offer-card__details" href="offers/chatgpt-pro-account/" data-event="offer_details_click" data-offer-id="MAL-CHATGPT-PRO-01" data-offer-title="ChatGPT Pro на месяц за $195" data-category="ai" data-price="$195 за 1 месяц, в рублях по курсу" data-cta-location="home_card">Подробнее</a>
             </div>
           </article>
-
-          <article class="offer-card" data-offer-id="MAL-OPENAI-01" data-category="ai" data-price="quote-before-payment">
+          <article class="offer-card" id="offer-MAL-OPENAI-01" data-offer-id="MAL-OPENAI-01" data-offer-title="GPT-5.6 API через управляемый шлюз" data-category="ai" data-price="Итог в ₽ — до оплаты">
             <div class="offer-card__head">
-              <img src="assets/chatgpt-api-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
-              <span class="offer-card__type">Управляемый сервис</span>
+              <img src="assets/chatgpt-api-icon-v2.webp" alt="GPT-5.6 API и управляемый шлюз" width="64" height="64" loading="lazy" decoding="async">
+              <span class="offer-card__category">AI и автоматизация</span>
             </div>
-            <h3>GPT‑5.6 API через управляемый шлюз</h3>
-            <p>Ключ к шлюзу MaL.BZ, лимиты расходов, статистика и помощь с подключением.</p>
-            <p class="offer-card__price">Итог в ₽ — до оплаты</p>
+            <h3>GPT-5.6 API через управляемый шлюз</h3>
+            <p class="offer-card__benefit">Отдельный ключ к шлюзу MaL.BZ, лимиты расходов, статистика и помощь с подключением.</p>
+            <div class="offer-card__price-row">
+              <p class="offer-card__price">Итог в ₽ — до оплаты</p>
+
+            </div>
             <ul class="offer-card__facts">
-              <li>Standard / short context</li>
-              <li>Курс фиксируется на дату оплаты</li>
-              <li>НДС и наценка уточняются</li>
-              <li>Проверено 01.09.2026</li>
+              <li>Standard processing</li>
+              <li>Short context: до 272 000 входных токенов</li>
+              <li>Курс фиксируется на дату оплаты · проверено 01.09.2026</li>
             </ul>
             <div class="offer-card__actions">
-              <a class="button button--small" href="offers/gpt-5-6-gateway/" data-event="offer_details">Подробнее</a>
-              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «GPT-5.6 API через управляемый шлюз», код MAL-OPENAI-01. Подскажите срок запуска и итоговую стоимость." data-event="telegram_click">Уточнить тариф</a>
+              <a href="https://t.me/am7am" class="button button--primary js-telegram" data-message="Здравствуйте. Интересует «GPT-5.6 API через управляемый шлюз». Итог в ₽ — до оплаты. Код: MAL-OPENAI-01. Ссылка: https://mal.bz/offers/gpt-5-6-gateway/" data-event="offer_telegram_click" data-offer-id="MAL-OPENAI-01" data-offer-title="GPT-5.6 API через управляемый шлюз" data-category="ai" data-price="Итог в ₽ — до оплаты" data-cta-location="home_card">Обсудить подключение API</a>
+              <a class="offer-card__details" href="offers/gpt-5-6-gateway/" data-event="offer_details_click" data-offer-id="MAL-OPENAI-01" data-offer-title="GPT-5.6 API через управляемый шлюз" data-category="ai" data-price="Итог в ₽ — до оплаты" data-cta-location="home_card">Подробнее</a>
             </div>
           </article>
-
-          <article class="offer-card" data-offer-id="MAL-YA-ACCOUNT-01" data-category="ads" data-price="200-usd-balance">
+          <article class="offer-card" id="offer-MAL-YA-ACCOUNT-01" data-offer-id="MAL-YA-ACCOUNT-01" data-offer-title="Аккаунт Яндекс Директ без НДС" data-category="ads" data-price="200 $ с рекламным балансом 200 $">
             <div class="offer-card__head">
-              <img src="assets/yandex-account-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
-              <span class="offer-card__type">Рекламный кабинет</span>
+              <img src="assets/yandex-account-icon-v2.webp" alt="Аккаунт Яндекс Директ" width="64" height="64" loading="lazy" decoding="async">
+              <span class="offer-card__category">Реклама и аналитика</span>
             </div>
             <h3>Аккаунт Яндекс Директ без НДС</h3>
-            <p>Оформляем на себя или на вас. Доступ к аккаунту только у вас.</p>
-            <p class="offer-card__price">200 $ с рекламным балансом</p>
+            <p class="offer-card__benefit">Оформляем на себя или на вас. Доступ к аккаунту только у вас.</p>
+            <div class="offer-card__price-row">
+              <p class="offer-card__price">200 $<small>с рекламным балансом 200 $</small></p>
+              <span class="offer-card__saving">Экономия 22%</span>
+            </div>
             <ul class="offer-card__facts">
-              <li>200 $ заявлены на балансе кабинета</li>
-              <li>Заявленная экономия — 22%</li>
-              <li>Вариант оформления выбирается до оплаты</li>
-              <li>Проверено 01.09.2026</li>
+              <li>200 $ на рекламном балансе</li>
+              <li>Оформление на нас или на вас</li>
+              <li>Доступ к аккаунту только у вас</li>
             </ul>
             <div class="offer-card__actions">
-              <a class="button button--small" href="offers/yandex-direct-account/" data-event="offer_details">Подробнее</a>
-              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «Аккаунт Яндекс Директ без НДС», код MAL-YA-ACCOUNT-01. Подскажите условия оформления и получения доступа." data-event="telegram_click">Уточнить условия</a>
+              <a href="https://t.me/am7am" class="button button--primary js-telegram" data-message="Здравствуйте. Интересует «Аккаунт Яндекс Директ без НДС» за 200 $ с рекламным балансом 200 $. Код: MAL-YA-ACCOUNT-01. Ссылка: https://mal.bz/offers/yandex-direct-account/" data-event="offer_telegram_click" data-offer-id="MAL-YA-ACCOUNT-01" data-offer-title="Аккаунт Яндекс Директ без НДС" data-category="ads" data-price="200 $ с рекламным балансом 200 $" data-cta-location="home_card">Получить аккаунт</a>
+              <a class="offer-card__details" href="offers/yandex-direct-account/" data-event="offer_details_click" data-offer-id="MAL-YA-ACCOUNT-01" data-offer-title="Аккаунт Яндекс Директ без НДС" data-category="ads" data-price="200 $ с рекламным балансом 200 $" data-cta-location="home_card">Подробнее</a>
             </div>
           </article>
-
-          <article class="offer-card" data-offer-id="MAL-ADS-SETUP-01" data-category="ads" data-price="1500-rub-hour">
+          <article class="offer-card" id="offer-MAL-ADS-SETUP-01" data-offer-id="MAL-ADS-SETUP-01" data-offer-title="Запустим поисковую рекламу и аналитику за 2 часа" data-category="ads" data-price="1 500 ₽ за час работы">
             <div class="offer-card__head">
-              <img src="assets/ads-setup-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
-              <span class="offer-card__type">Ручная услуга</span>
+              <img src="assets/ads-setup-icon-v2.webp" alt="Настройка поисковой рекламы и аналитики" width="64" height="64" loading="lazy" decoding="async">
+              <span class="offer-card__category">Реклама и аналитика</span>
             </div>
-            <h3>Настройка Яндекс Директ и аналитики</h3>
-            <p>Поисковые кампании, Метрика, цели и UTM. Первичная настройка — 2 часа.</p>
-            <p class="offer-card__price">1 500 ₽/час</p>
+            <h3>Запустим поисковую рекламу и аналитику за 2 часа</h3>
+            <p class="offer-card__benefit">Настроим кампании, Метрику, цели и UTM, затем покажем выполненную работу в отчёте.</p>
+            <div class="offer-card__price-row">
+              <p class="offer-card__price">1 500 ₽<small>за час работы</small></p>
+
+            </div>
             <ul class="offer-card__facts">
-              <li>Первые 2 часа — первичная настройка</li>
-              <li>Дальше — работа по согласованным задачам</li>
-              <li>Поддержка специалиста</li>
-              <li>Проверено 01.09.2026</li>
+              <li>Первичная настройка за 2 часа</li>
+              <li>Яндекс Метрика, цели и UTM</li>
+              <li>Отчёт по выполненной работе</li>
             </ul>
             <div class="offer-card__actions">
-              <a class="button button--small" href="offers/yandex-direct-setup/" data-event="offer_details">Подробнее</a>
-              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «Настройка Яндекс Директ и аналитики», код MAL-ADS-SETUP-01. Подскажите срок запуска и итоговую стоимость." data-event="telegram_click">Обсудить запуск</a>
+              <a href="https://t.me/am7am" class="button button--primary js-telegram" data-message="Здравствуйте. Интересует «Запустим поисковую рекламу и аналитику за 2 часа». Цена: 1 500 ₽/час. Код: MAL-ADS-SETUP-01. Ссылка: https://mal.bz/offers/yandex-direct-setup/" data-event="offer_telegram_click" data-offer-id="MAL-ADS-SETUP-01" data-offer-title="Запустим поисковую рекламу и аналитику за 2 часа" data-category="ads" data-price="1 500 ₽ за час работы" data-cta-location="home_card">Заказать настройку</a>
+              <a class="offer-card__details" href="offers/yandex-direct-setup/" data-event="offer_details_click" data-offer-id="MAL-ADS-SETUP-01" data-offer-title="Запустим поисковую рекламу и аналитику за 2 часа" data-category="ads" data-price="1 500 ₽ за час работы" data-cta-location="home_card">Подробнее</a>
             </div>
           </article>
-
-          <article class="offer-card" data-offer-id="MAL-WEB-01" data-category="sites services" data-price="from-19900-rub">
+          <article class="offer-card" id="offer-MAL-WEB-01" data-offer-id="MAL-WEB-01" data-offer-title="Лендинг под одно целевое действие" data-category="services" data-price="от 19 900 ₽ за проект">
             <div class="offer-card__head">
-              <img src="assets/landing-studio-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
-              <span class="offer-card__type">Ручная услуга</span>
+              <img src="assets/landing-studio-icon-v2.webp" alt="Разработка лендинга" width="64" height="64" loading="lazy" decoding="async">
+              <span class="offer-card__category">Сайты и услуги</span>
             </div>
             <h3>Лендинг под одно целевое действие</h3>
-            <p>Структура, текст и дизайн под аудиторию и предложение бизнеса.</p>
-            <p class="offer-card__price">от 19 900 ₽</p>
+            <p class="offer-card__benefit">Структура, текст, дизайн и адаптивная вёрстка под аудиторию и предложение бизнеса.</p>
+            <div class="offer-card__price-row">
+              <p class="offer-card__price">от 19 900 ₽<small>за проект</small></p>
+
+            </div>
             <ul class="offer-card__facts">
-              <li>Цена и срок после согласования объёма</li>
-              <li>Внедрение под задачу клиента</li>
-              <li>Поддержка исполнителя</li>
-              <li>Проверено 01.09.2026</li>
+              <li>Структура и текст под аудиторию</li>
+              <li>Адаптивный дизайн</li>
+              <li>Один понятный путь до заявки</li>
             </ul>
             <div class="offer-card__actions">
-              <a class="button button--small" href="offers/landing-page/" data-event="offer_details">Подробнее</a>
-              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «Лендинг под одно целевое действие», код MAL-WEB-01. Подскажите срок запуска и итоговую стоимость." data-event="telegram_click">Обсудить проект</a>
+              <a href="https://t.me/am7am" class="button button--primary js-telegram" data-message="Здравствуйте. Интересует «Лендинг под одно целевое действие» от 19 900 ₽. Код: MAL-WEB-01. Ссылка: https://mal.bz/offers/landing-page/" data-event="offer_telegram_click" data-offer-id="MAL-WEB-01" data-offer-title="Лендинг под одно целевое действие" data-category="services" data-price="от 19 900 ₽ за проект" data-cta-location="home_card">Заказать лендинг</a>
+              <a class="offer-card__details" href="offers/landing-page/" data-event="offer_details_click" data-offer-id="MAL-WEB-01" data-offer-title="Лендинг под одно целевое действие" data-category="services" data-price="от 19 900 ₽ за проект" data-cta-location="home_card">Подробнее</a>
             </div>
           </article>
-
-          <article class="offer-card" data-offer-id="MAL-LIVID-01" data-category="content" data-price="11000-rub-lifetime">
+          <article class="offer-card" id="offer-MAL-LIVID-01" data-offer-id="MAL-LIVID-01" data-offer-title="Видео без рекламы и чужих рекомендаций — Livid" data-category="software" data-price="11 000 ₽ пожизненная лицензия">
             <div class="offer-card__head">
-              <img src="assets/livid-video-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
-              <span class="offer-card__type">Пожизненная лицензия</span>
+              <img src="assets/livid-video-icon-v2.webp" alt="Видеоплеер Livid" width="64" height="64" loading="lazy" decoding="async">
+              <span class="offer-card__category">Софт</span>
             </div>
-            <h3>Показывать видео без рекламы и чужих рекомендаций</h3>
-            <p>Livid — плеер, в котором оформление, доступ и просмотр остаются под вашим контролем.</p>
-            <p class="offer-card__price">11 000 ₽, Lifetime</p>
+            <h3>Видео без рекламы и чужих рекомендаций — Livid</h3>
+            <p class="offer-card__benefit">Плеер показывает только ваше видео, а оформление, доступ и просмотр остаются под вашим контролем.</p>
+            <div class="offer-card__price-row">
+              <p class="offer-card__price">11 000 ₽<small>пожизненная лицензия</small></p>
+
+            </div>
             <ul class="offer-card__facts">
-              <li>500 ГБ хранения и 2 ТБ трафика в месяц</li>
+              <li>500 ГБ хранения</li>
+              <li>2 ТБ трафика в месяц</li>
               <li>4K и встраивание на сайт</li>
-              <li>Свой логотип и настройка плеера</li>
-              <li>Пожизненные обновления Pro‑тарифа</li>
             </ul>
             <div class="offer-card__actions">
-              <a class="button button--small" href="offers/livid/" data-event="offer_details">Подробнее</a>
-              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «Livid», код MAL-LIVID-01. Подскажите условия получения пожизненной лицензии." data-event="telegram_click">Уточнить доступ</a>
+              <a href="https://t.me/am7am" class="button button--primary js-telegram" data-message="Здравствуйте. Интересует «Видео без рекламы и чужих рекомендаций — Livid». Цена: 11 000 ₽, пожизненная лицензия. Код: MAL-LIVID-01. Ссылка: https://mal.bz/offers/livid/" data-event="offer_telegram_click" data-offer-id="MAL-LIVID-01" data-offer-title="Видео без рекламы и чужих рекомендаций — Livid" data-category="software" data-price="11 000 ₽ пожизненная лицензия" data-cta-location="home_card">Получить Livid</a>
+              <a class="offer-card__details" href="offers/livid/" data-event="offer_details_click" data-offer-id="MAL-LIVID-01" data-offer-title="Видео без рекламы и чужих рекомендаций — Livid" data-category="software" data-price="11 000 ₽ пожизненная лицензия" data-cta-location="home_card">Подробнее</a>
             </div>
           </article>
-
-          <article class="offer-card" data-offer-id="MAL-SENDFOX-01" data-category="content" data-price="6500-rub-lifetime">
+          <article class="offer-card" id="offer-MAL-SENDFOX-01" data-offer-id="MAL-SENDFOX-01" data-offer-title="SendFox — email-маркетинг без ежемесячной оплаты" data-category="software" data-price="6 500 ₽ пожизненный доступ">
             <div class="offer-card__head">
-              <img src="assets/sendfox-email-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
-              <span class="offer-card__type">Пожизненный доступ</span>
+              <img src="assets/sendfox-email-icon-v2.webp" alt="Email-маркетинг SendFox" width="64" height="64" loading="lazy" decoding="async">
+              <span class="offer-card__category">Софт</span>
             </div>
-            <h3>Email‑маркетинг без ежемесячной оплаты</h3>
-            <p>SendFox: рассылки, формы подписки и автоматические цепочки писем.</p>
-            <p class="offer-card__price">6 500 ₽, пожизненно</p>
+            <h3>SendFox — email-маркетинг без ежемесячной оплаты</h3>
+            <p class="offer-card__benefit">Рассылки, формы подписки и автоматические цепочки писем для регулярной связи с аудиторией.</p>
+            <div class="offer-card__price-row">
+              <p class="offer-card__price">6 500 ₽<small>пожизненный доступ</small></p>
+              <span class="offer-card__old-price">29 000 ₽</span>
+            </div>
             <ul class="offer-card__facts">
-              <li>5 000 контактов и 300 000 отправок</li>
-              <li>Неограниченные цепочки, страницы и формы</li>
+              <li>5 000 контактов</li>
+              <li>300 000 отправок</li>
               <li>API и более 30 интеграций</li>
-              <li>60 дней на возврат</li>
             </ul>
             <div class="offer-card__actions">
-              <a class="button button--small" href="offers/sendfox/" data-event="offer_details">Подробнее</a>
-              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «SendFox», код MAL-SENDFOX-01. Подскажите условия получения пожизненного доступа." data-event="telegram_click">Уточнить доступ</a>
+              <a href="https://t.me/am7am" class="button button--primary js-telegram" data-message="Здравствуйте. Интересует «SendFox — email-маркетинг без ежемесячной оплаты». Цена: 6 500 ₽, пожизненный доступ. Код: MAL-SENDFOX-01. Ссылка: https://mal.bz/offers/sendfox/" data-event="offer_telegram_click" data-offer-id="MAL-SENDFOX-01" data-offer-title="SendFox — email-маркетинг без ежемесячной оплаты" data-category="software" data-price="6 500 ₽ пожизненный доступ" data-cta-location="home_card">Получить SendFox</a>
+              <a class="offer-card__details" href="offers/sendfox/" data-event="offer_details_click" data-offer-id="MAL-SENDFOX-01" data-offer-title="SendFox — email-маркетинг без ежемесячной оплаты" data-category="software" data-price="6 500 ₽ пожизненный доступ" data-cta-location="home_card">Подробнее</a>
             </div>
           </article>
-
-          <article class="offer-card" data-offer-id="MAL-LUSIESTA-01" data-category="content" data-price="12900-rub-year">
+          <article class="offer-card" id="offer-MAL-LUSIESTA-01" data-offer-id="MAL-LUSIESTA-01" data-offer-title="Управление Android-фермой из одного окна" data-category="software" data-price="12 900 ₽ на 1 год">
             <div class="offer-card__head">
-              <img src="assets/lusiesta-farm-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
-              <span class="offer-card__type">Программная лицензия</span>
+              <img src="assets/lusiesta-farm-icon-v2.webp" alt="Lusiesta Studio для Android-фермы" width="64" height="64" loading="lazy" decoding="async">
+              <span class="offer-card__category">Софт</span>
             </div>
-            <h3>Управление Android‑фермой из одного окна</h3>
-            <p>Планирование публикаций, устройства, прокси, APK и клоны приложений.</p>
-            <p class="offer-card__price">12 900 ₽ на 1 год</p>
+            <h3>Управление Android-фермой из одного окна</h3>
+            <p class="offer-card__benefit">Планируйте публикации и управляйте устройствами, прокси, APK и клонами приложений.</p>
+            <div class="offer-card__price-row">
+              <p class="offer-card__price">12 900 ₽<small>на 1 год</small></p>
+
+            </div>
             <ul class="offer-card__facts">
-              <li>1 компьютер, до 20 устройств</li>
-              <li>Правила платформ применяются</li>
-              <li>Риск блокировки зависит от сценария</li>
-              <li>Проверено 01.09.2026</li>
+              <li>1 компьютер</li>
+              <li>До 20 устройств</li>
+              <li>Автопостинг, прокси, APK и клоны</li>
             </ul>
             <div class="offer-card__actions">
-              <a class="button button--small" href="offers/lusiesta-studio/" data-event="offer_details">Подробнее</a>
-              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «Lusiesta Studio», код MAL-LUSIESTA-01. Подскажите срок запуска и итоговую стоимость." data-event="telegram_click">Уточнить запуск</a>
+              <a href="https://t.me/am7am" class="button button--primary js-telegram" data-message="Здравствуйте. Интересует «Управление Android-фермой из одного окна». Цена: 12 900 ₽ на 1 год. Код: MAL-LUSIESTA-01. Ссылка: https://mal.bz/offers/lusiesta-studio/" data-event="offer_telegram_click" data-offer-id="MAL-LUSIESTA-01" data-offer-title="Управление Android-фермой из одного окна" data-category="software" data-price="12 900 ₽ на 1 год" data-cta-location="home_card">Получить Lusiesta Studio</a>
+              <a class="offer-card__details" href="offers/lusiesta-studio/" data-event="offer_details_click" data-offer-id="MAL-LUSIESTA-01" data-offer-title="Управление Android-фермой из одного окна" data-category="software" data-price="12 900 ₽ на 1 год" data-cta-location="home_card">Подробнее</a>
             </div>
           </article>
-
-          <article class="offer-card" data-offer-id="MAL-TG-PARSER-01" data-category="ai content" data-price="3900-rub-once">
+          <article class="offer-card" id="offer-MAL-TG-PARSER-01" data-offer-id="MAL-TG-PARSER-01" data-offer-title="Telegram Target Parser 5.0" data-category="software" data-price="3 900 ₽ бессрочная лицензия">
             <div class="offer-card__head">
-              <img src="assets/telegram-parser-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
-              <span class="offer-card__type">Программная лицензия</span>
+              <img src="assets/telegram-parser-icon-v2.webp" alt="Telegram Target Parser 5.0" width="64" height="64" loading="lazy" decoding="async">
+              <span class="offer-card__category">Софт и автоматизация</span>
             </div>
-            <h3>Найти Telegram‑каналы, чаты и аудиторию</h3>
-            <p>8 режимов поиска, AI‑подбор ключей, Deep Search и экспорт в CSV/XLSX.</p>
-            <p class="offer-card__price">3 900 ₽, бессрочно</p>
+            <h3>Telegram Target Parser 5.0</h3>
+            <p class="offer-card__benefit">Находит релевантные Telegram-каналы, чаты и активную аудиторию по описанию задачи.</p>
+            <div class="offer-card__price-row">
+              <p class="offer-card__price">3 900 ₽<small>бессрочная лицензия</small></p>
+
+            </div>
             <ul class="offer-card__facts">
-              <li>Windows‑программа и Telegram‑бот</li>
+              <li>8 режимов поиска и Deep Search</li>
+              <li>Windows + Telegram-бот</li>
               <li>Обновления ветки 5.x</li>
-              <li>Не использовать для спама</li>
-              <li>Проверено 01.09.2026</li>
             </ul>
             <div class="offer-card__actions">
-              <a class="button button--small" href="offers/telegram-target-parser-5/" data-event="offer_details">Подробнее</a>
-              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «Telegram Target Parser 5.0», код MAL-TG-PARSER-01. Подскажите срок запуска и итоговую стоимость." data-event="telegram_click">Уточнить запуск</a>
+              <a href="https://t.me/am7am" class="button button--primary js-telegram" data-message="Здравствуйте. Интересует «Telegram Target Parser 5.0» за 3 900 ₽. Код: MAL-TG-PARSER-01. Ссылка: https://mal.bz/offers/telegram-target-parser-5/" data-event="offer_telegram_click" data-offer-id="MAL-TG-PARSER-01" data-offer-title="Telegram Target Parser 5.0" data-category="software" data-price="3 900 ₽ бессрочная лицензия" data-cta-location="home_card">Купить за 3 900 ₽</a>
+              <a class="offer-card__details" href="offers/telegram-target-parser-5/" data-event="offer_details_click" data-offer-id="MAL-TG-PARSER-01" data-offer-title="Telegram Target Parser 5.0" data-category="software" data-price="3 900 ₽ бессрочная лицензия" data-cta-location="home_card">Подробнее</a>
             </div>
           </article>
         </div>
-        <div class="empty-state" hidden>
-          <p>В этой категории пока нет опубликованных предложений.</p>
-          <button type="button" class="button" data-filter-reset>Показать все</button>
-        </div>
       </section>
 
-      <section class="section process" aria-labelledby="process-title">
-        <div class="section-heading">
-          <p class="eyebrow">Проверка</p>
-          <h2 id="process-title">Как мы проверяем предложения</h2>
-          <p>Для каждого оффера фиксируем шесть вещей. Если существенное условие ещё требует уточнения, показываем это прямо и подтверждаем условия до оплаты.</p>
-        </div>
-        <ol class="check-list">
-          <li><span>01</span>Право продажи</li>
-          <li><span>02</span>Итоговая цена</li>
-          <li><span>03</span>Ограничения</li>
-          <li><span>04</span>Срок</li>
-          <li><span>05</span>Поддержка</li>
-          <li><span>06</span>Дата проверки</li>
-        </ol>
-      </section>
-
-      <section class="section faq" aria-labelledby="faq-title">
-        <div class="section-heading">
-          <p class="eyebrow">FAQ</p>
-          <h2 id="faq-title">Перед оплатой</h2>
-        </div>
+      <section class="home-faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Перед покупкой</h2>
         <details>
-          <summary>Почему часть цен указана «от» или уточняется?</summary>
-          <p>Так отмечены услуги с переменным объёмом или условиями. Итоговую сумму и состав фиксируем до оплаты.</p>
+          <summary>Как начать покупку?</summary>
+          <p>Нажмите основную кнопку в карточке. Текст заявки скопируется, затем откроется Telegram.</p>
         </details>
         <details>
-          <summary>Что откроется по кнопке Telegram?</summary>
-          <p>Диалог с менеджером и готовым сообщением, где уже указаны название и код выбранного предложения. Сообщение не отправляется автоматически.</p>
+          <summary>Что будет в сообщении?</summary>
+          <p>Название, цена, код оффера и ссылка на его страницу. Вам останется вставить текст в чат.</p>
         </details>
         <details>
-          <summary>Где смотреть ограничения и поддержку?</summary>
-          <p>Короткие условия есть в карточке. Полный состав, ограничения и владелец поддержки указаны на странице предложения.</p>
+          <summary>Где посмотреть полный состав?</summary>
+          <p>Нажмите «Подробнее» в нужной карточке. На странице оффера собраны условия и состав предложения.</p>
         </details>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p><span>MaL.BZ</span> — инструменты и услуги для малого бизнеса.</p>
-      <a href="https://t.me/am7am">Telegram: @am7am</a>
+      <p><span>MaL.BZ</span> — софт и услуги для малого бизнеса.</p>
+      <div class="site-footer__links">
+        <a href="https://t.me/am7am">Telegram: @am7am</a>
+        <a href="https://t.me/am7am" class="js-telegram supplier-link" data-message="Здравствуйте. Хочу добавить своё предложение на MaL.BZ." data-event="supplier_link_click" data-cta-location="footer">Добавить своё предложение</a>
+      </div>
     </footer>
+    <div class="copy-toast" role="status" aria-live="polite" hidden>Текст заявки скопирован. Вставьте его в чат.</div>
   </body>
 </html>
