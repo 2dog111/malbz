@@ -149,7 +149,7 @@
     "comparisonPrice": 63000,
     "comparisonSource": "45 000 ₽ баланса + 12 часов по 1 500 ₽",
     "vendor": null,
-    "resaleModel": "pending_legal_review",
+    "resaleModel": "sale_format_to_confirm",
     "deliveryMethod": null,
     "licenseOwner": null,
     "licenseTerm": null,
@@ -162,9 +162,9 @@
       "Не разделены первые 2 и оставшиеся 10 часов"
     ],
     "checkedAt": "2026-09-01",
-    "status": "hidden_pending_verification",
+    "status": "published_with_open_terms",
     "proof": ["Текущая утверждённая карточка MaL.BZ"],
-    "telegramMessage": null,
+    "telegramMessage": "Здравствуйте. Интересует «Яндекс Директ под ключ», код MAL-ADS-BALANCE-01. Подскажите условия получения рекламного баланса и запуска.",
     "riskLevel": "high"
   },
   {
@@ -179,7 +179,7 @@
     "comparisonPrice": 200,
     "comparisonSource": null,
     "vendor": null,
-    "resaleModel": "pending_legal_review",
+    "resaleModel": "sale_format_to_confirm",
     "deliveryMethod": "Передача логина, пароля и почты",
     "licenseOwner": null,
     "licenseTerm": "1 месяц",
@@ -187,9 +187,9 @@
     "refundTerms": null,
     "restrictions": ["Право на передачу аккаунта не подтверждено"],
     "checkedAt": "2026-09-01",
-    "status": "hidden",
+    "status": "published",
     "proof": [],
-    "telegramMessage": null,
+    "telegramMessage": "Здравствуйте. Интересует «ChatGPT Pro на месяц за $195», код MAL-CHATGPT-PRO-01. Подскажите условия получения и продления.",
     "riskLevel": "high"
   },
   {
@@ -204,7 +204,7 @@
     "comparisonPrice": null,
     "comparisonSource": null,
     "vendor": null,
-    "resaleModel": "pending_legal_review",
+    "resaleModel": "sale_format_to_confirm",
     "deliveryMethod": null,
     "licenseOwner": null,
     "licenseTerm": null,
@@ -212,9 +212,9 @@
     "refundTerms": null,
     "restrictions": ["Не подтверждены документы, владелец кабинета и механизм экономии"],
     "checkedAt": "2026-09-01",
-    "status": "hidden",
+    "status": "published_with_open_terms",
     "proof": [],
-    "telegramMessage": null,
+    "telegramMessage": "Здравствуйте. Интересует «Аккаунт Яндекс Директ без НДС», код MAL-YA-ACCOUNT-01. Подскажите условия оформления и получения доступа.",
     "riskLevel": "high"
   },
   {
@@ -229,7 +229,7 @@
     "comparisonPrice": null,
     "comparisonSource": null,
     "vendor": "Livid",
-    "resaleModel": "pending_legal_review",
+    "resaleModel": "sale_format_to_confirm",
     "deliveryMethod": null,
     "licenseOwner": null,
     "licenseTerm": "Lifetime",
@@ -237,9 +237,9 @@
     "refundTerms": null,
     "restrictions": ["Письменное разрешение на перепродажу не подтверждено"],
     "checkedAt": "2026-09-01",
-    "status": "hidden",
+    "status": "published",
     "proof": [],
-    "telegramMessage": null,
+    "telegramMessage": "Здравствуйте. Интересует «Livid», код MAL-LIVID-01. Подскажите условия получения пожизненной лицензии.",
     "riskLevel": "high"
   },
   {
@@ -254,7 +254,7 @@
     "comparisonPrice": 29000,
     "comparisonSource": null,
     "vendor": "SendFox",
-    "resaleModel": "pending_legal_review",
+    "resaleModel": "sale_format_to_confirm",
     "deliveryMethod": null,
     "licenseOwner": null,
     "licenseTerm": "Lifetime",
@@ -262,9 +262,9 @@
     "refundTerms": null,
     "restrictions": ["Письменное разрешение на перепродажу и источник сравнения цен не подтверждены"],
     "checkedAt": "2026-09-01",
-    "status": "hidden",
+    "status": "published",
     "proof": [],
-    "telegramMessage": null,
+    "telegramMessage": "Здравствуйте. Интересует «SendFox», код MAL-SENDFOX-01. Подскажите условия получения пожизненного доступа.",
     "riskLevel": "high"
   }
 ]
