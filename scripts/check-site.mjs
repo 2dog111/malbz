@@ -72,6 +72,19 @@ const exactHero = "Софт, реклама и услуги для малого 
 if (!home.includes(exactHero)) fail("На главной нет утверждённого H1");
 if ((home.match(/<article class="offer-card"/g) || []).length !== 10) fail("На главной не 10 карточек");
 if (home.includes("data-filter") || /featured|recommended|рекомендуем/i.test(home)) fail("На главной остались фильтры или выделенная подборка");
+if (!home.includes('class="hero__visual"') || !home.includes("assets/hero-marketplace-pencil-v2-720.webp")) {
+  fail("На первом экране нет восстановленной иллюстрации");
+}
+const heroImagePath = path.join(root, "assets", "hero-marketplace-pencil-v2-720.webp");
+if (!fs.existsSync(heroImagePath) || fs.statSync(heroImagePath).size > 700 * 1024) {
+  fail("Облегчённая версия иллюстрации отсутствует или больше 700 КБ");
+}
+if (/eyebrow|offer-card__category|offer-card__saving|offer-saving/.test(home)) {
+  fail("На главной остались бейджи");
+}
+if (home.includes("10 предложений") || home.includes("Цена и главное условие видны сразу")) {
+  fail("На главной остался удалённый служебный текст");
+}
 if ((home.match(/supplier-link/g) || []).length !== 1 || home.indexOf("supplier-link") < home.indexOf("<footer")) {
   fail("Ссылка поставщика должна быть одна и только в подвале");
 }
@@ -89,6 +102,9 @@ for (const offer of offers) {
     }
   }
   if (!html.includes('class="sticky-cta"')) fail(`${offer.id}: нет мобильного sticky CTA`);
+  if (/eyebrow|offer-card__category|offer-card__saving|offer-saving/.test(html)) {
+    fail(`${offer.id}: на странице оффера остались бейджи`);
+  }
 }
 
 function checkLocalReferences(htmlPath) {
@@ -129,6 +145,9 @@ if (/цена аккаунта.{0,40}(?:равна|=).{0,10}(?:нулю|0)/i.tes
 }
 if (/pending_legal_review|riskLevel|legalStatus|policyWarning/.test(generatedText)) {
   fail("В публичном HTML остались служебные риск/правовые поля");
+}
+if (/исходный OpenAI API key|аккаунт OpenAI.{0,80}не переда|статус НДС|фиксированной наценки/i.test(generatedText)) {
+  fail("В публичном HTML остались юридические или служебные оговорки");
 }
 
 if (errors.length) {

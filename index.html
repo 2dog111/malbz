@@ -14,8 +14,8 @@
     <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="preload" href="assets/fonts/onest-cyrillic-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="market.css?v=20260901-2">
-    <script src="assets/site.js?v=20260901-2" defer></script>
+    <link rel="stylesheet" href="market.css?v=20260901-3">
+    <script src="assets/site.js?v=20260901-3" defer></script>
   </head>
   <body data-page="home">
     <a class="skip-link" href="#offers">К предложениям</a>
@@ -29,25 +29,25 @@
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow">MaL.BZ</p>
-        <h1 id="hero-title">Софт, реклама и услуги для малого бизнеса — по специальным ценам</h1>
-        <p class="hero__lead">Выберите предложение, посмотрите условия и сразу напишите по нему в Telegram.</p>
-        <a class="button button--primary hero__button" href="#offers">Смотреть предложения</a>
+        <div class="hero__copy">
+          <h1 id="hero-title">Софт, реклама и услуги для малого бизнеса — по специальным ценам</h1>
+          <p class="hero__lead">Выберите предложение, посмотрите условия и сразу напишите по нему в Telegram.</p>
+          <a class="button button--primary hero__button" href="#offers">Смотреть предложения</a>
+        </div>
+        <picture class="hero__visual">
+          <source srcset="assets/hero-marketplace-pencil-v2-720.webp 720w, assets/hero-marketplace-pencil-v2.webp 1200w" sizes="(max-width: 760px) calc(100vw - 28px), 560px" type="image/webp">
+          <img src="assets/hero-marketplace-pencil-v2.png" alt="Витрина предложений для малого бизнеса" width="1200" height="667" fetchpriority="high">
+        </picture>
       </section>
 
       <section class="catalog" id="offers" aria-labelledby="offers-title">
         <div class="catalog__heading">
-          <div>
-            <p class="eyebrow">10 предложений</p>
-            <h2 id="offers-title">Выберите подходящий оффер</h2>
-          </div>
-          <p>Цена и главное условие видны сразу. Подробности — на странице предложения.</p>
+          <h2 id="offers-title">Выберите подходящий оффер</h2>
         </div>
         <div class="offer-grid">
           <article class="offer-card" id="offer-MAL-ADS-BALANCE-01" data-offer-id="MAL-ADS-BALANCE-01" data-offer-title="Яндекс Директ под ключ" data-category="ads" data-price="35 000 ₽ за комплекс">
             <div class="offer-card__head">
               <img src="assets/yandex-balance-icon-v2.webp" alt="Яндекс Директ и рекламная аналитика" width="64" height="64" loading="eager" fetchpriority="high" decoding="async">
-              <span class="offer-card__category">Реклама и аналитика</span>
             </div>
             <h3>Яндекс Директ под ключ</h3>
             <p class="offer-card__benefit">45 000 ₽ рекламного баланса и 12 часов настройки рекламы и аналитики.</p>
@@ -68,7 +68,6 @@
           <article class="offer-card" id="offer-MAL-CHATGPT-PRO-01" data-offer-id="MAL-CHATGPT-PRO-01" data-offer-title="ChatGPT Pro на месяц за $195" data-category="ai" data-price="$195 за 1 месяц, в рублях по курсу">
             <div class="offer-card__head">
               <img src="assets/chatgpt-pro-icon-v2.webp" alt="ChatGPT Pro" width="64" height="64" loading="lazy" decoding="async">
-              <span class="offer-card__category">AI и автоматизация</span>
             </div>
             <h3>ChatGPT Pro на месяц за $195</h3>
             <p class="offer-card__benefit">Свежий аккаунт с активной Pro-версией ChatGPT и доступом к созданной для вас почте.</p>
@@ -89,7 +88,6 @@
           <article class="offer-card" id="offer-MAL-OPENAI-01" data-offer-id="MAL-OPENAI-01" data-offer-title="GPT-5.6 API через управляемый шлюз" data-category="ai" data-price="Итог в ₽ — до оплаты">
             <div class="offer-card__head">
               <img src="assets/chatgpt-api-icon-v2.webp" alt="GPT-5.6 API и управляемый шлюз" width="64" height="64" loading="lazy" decoding="async">
-              <span class="offer-card__category">AI и автоматизация</span>
             </div>
             <h3>GPT-5.6 API через управляемый шлюз</h3>
             <p class="offer-card__benefit">Отдельный ключ к шлюзу MaL.BZ, лимиты расходов, статистика и помощь с подключением.</p>
@@ -110,13 +108,12 @@
           <article class="offer-card" id="offer-MAL-YA-ACCOUNT-01" data-offer-id="MAL-YA-ACCOUNT-01" data-offer-title="Аккаунт Яндекс Директ без НДС" data-category="ads" data-price="200 $ с рекламным балансом 200 $">
             <div class="offer-card__head">
               <img src="assets/yandex-account-icon-v2.webp" alt="Аккаунт Яндекс Директ" width="64" height="64" loading="lazy" decoding="async">
-              <span class="offer-card__category">Реклама и аналитика</span>
             </div>
             <h3>Аккаунт Яндекс Директ без НДС</h3>
             <p class="offer-card__benefit">Оформляем на себя или на вас. Доступ к аккаунту только у вас.</p>
             <div class="offer-card__price-row">
               <p class="offer-card__price">200 $<small>с рекламным балансом 200 $</small></p>
-              <span class="offer-card__saving">Экономия 22%</span>
+
             </div>
             <ul class="offer-card__facts">
               <li>200 $ на рекламном балансе</li>
@@ -131,7 +128,6 @@
           <article class="offer-card" id="offer-MAL-ADS-SETUP-01" data-offer-id="MAL-ADS-SETUP-01" data-offer-title="Запустим поисковую рекламу и аналитику за 2 часа" data-category="ads" data-price="1 500 ₽ за час работы">
             <div class="offer-card__head">
               <img src="assets/ads-setup-icon-v2.webp" alt="Настройка поисковой рекламы и аналитики" width="64" height="64" loading="lazy" decoding="async">
-              <span class="offer-card__category">Реклама и аналитика</span>
             </div>
             <h3>Запустим поисковую рекламу и аналитику за 2 часа</h3>
             <p class="offer-card__benefit">Настроим кампании, Метрику, цели и UTM, затем покажем выполненную работу в отчёте.</p>
@@ -152,7 +148,6 @@
           <article class="offer-card" id="offer-MAL-WEB-01" data-offer-id="MAL-WEB-01" data-offer-title="Лендинг под одно целевое действие" data-category="services" data-price="от 19 900 ₽ за проект">
             <div class="offer-card__head">
               <img src="assets/landing-studio-icon-v2.webp" alt="Разработка лендинга" width="64" height="64" loading="lazy" decoding="async">
-              <span class="offer-card__category">Сайты и услуги</span>
             </div>
             <h3>Лендинг под одно целевое действие</h3>
             <p class="offer-card__benefit">Структура, текст, дизайн и адаптивная вёрстка под аудиторию и предложение бизнеса.</p>
@@ -173,7 +168,6 @@
           <article class="offer-card" id="offer-MAL-LIVID-01" data-offer-id="MAL-LIVID-01" data-offer-title="Видео без рекламы и чужих рекомендаций — Livid" data-category="software" data-price="11 000 ₽ пожизненная лицензия">
             <div class="offer-card__head">
               <img src="assets/livid-video-icon-v2.webp" alt="Видеоплеер Livid" width="64" height="64" loading="lazy" decoding="async">
-              <span class="offer-card__category">Софт</span>
             </div>
             <h3>Видео без рекламы и чужих рекомендаций — Livid</h3>
             <p class="offer-card__benefit">Плеер показывает только ваше видео, а оформление, доступ и просмотр остаются под вашим контролем.</p>
@@ -194,7 +188,6 @@
           <article class="offer-card" id="offer-MAL-SENDFOX-01" data-offer-id="MAL-SENDFOX-01" data-offer-title="SendFox — email-маркетинг без ежемесячной оплаты" data-category="software" data-price="6 500 ₽ пожизненный доступ">
             <div class="offer-card__head">
               <img src="assets/sendfox-email-icon-v2.webp" alt="Email-маркетинг SendFox" width="64" height="64" loading="lazy" decoding="async">
-              <span class="offer-card__category">Софт</span>
             </div>
             <h3>SendFox — email-маркетинг без ежемесячной оплаты</h3>
             <p class="offer-card__benefit">Рассылки, формы подписки и автоматические цепочки писем для регулярной связи с аудиторией.</p>
@@ -215,7 +208,6 @@
           <article class="offer-card" id="offer-MAL-LUSIESTA-01" data-offer-id="MAL-LUSIESTA-01" data-offer-title="Управление Android-фермой из одного окна" data-category="software" data-price="12 900 ₽ на 1 год">
             <div class="offer-card__head">
               <img src="assets/lusiesta-farm-icon-v2.webp" alt="Lusiesta Studio для Android-фермы" width="64" height="64" loading="lazy" decoding="async">
-              <span class="offer-card__category">Софт</span>
             </div>
             <h3>Управление Android-фермой из одного окна</h3>
             <p class="offer-card__benefit">Планируйте публикации и управляйте устройствами, прокси, APK и клонами приложений.</p>
@@ -236,7 +228,6 @@
           <article class="offer-card" id="offer-MAL-TG-PARSER-01" data-offer-id="MAL-TG-PARSER-01" data-offer-title="Telegram Target Parser 5.0" data-category="software" data-price="3 900 ₽ бессрочная лицензия">
             <div class="offer-card__head">
               <img src="assets/telegram-parser-icon-v2.webp" alt="Telegram Target Parser 5.0" width="64" height="64" loading="lazy" decoding="async">
-              <span class="offer-card__category">Софт и автоматизация</span>
             </div>
             <h3>Telegram Target Parser 5.0</h3>
             <p class="offer-card__benefit">Находит релевантные Telegram-каналы, чаты и активную аудиторию по описанию задачи.</p>

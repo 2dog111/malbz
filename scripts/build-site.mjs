@@ -35,8 +35,8 @@ function head({ title, description, canonical, image, depth = 0 }) {
     <link rel="icon" type="image/png" sizes="64x64" href="${prefix}assets/favicon.png">
     <link rel="apple-touch-icon" href="${prefix}assets/apple-touch-icon.png">
     <link rel="preload" href="${prefix}assets/fonts/onest-cyrillic-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="${prefix}market.css?v=20260901-2">
-    <script src="${prefix}assets/site.js?v=20260901-2" defer></script>
+    <link rel="stylesheet" href="${prefix}market.css?v=20260901-3">
+    <script src="${prefix}assets/site.js?v=20260901-3" defer></script>
   </head>`;
 }
 
@@ -55,20 +55,16 @@ function renderCard(offer, index) {
   const oldPrice = offer.oldPrice
     ? `<span class="offer-card__old-price">${escapeHtml(offer.oldPrice)}</span>`
     : "";
-  const saving = offer.saving
-    ? `<span class="offer-card__saving">${escapeHtml(offer.saving)}</span>`
-    : "";
   const loading = index === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return `          <article class="offer-card" id="offer-${escapeHtml(offer.id)}" data-offer-id="${escapeHtml(offer.id)}" data-offer-title="${escapeHtml(offer.title)}" data-category="${escapeHtml(offer.category)}" data-price="${escapeHtml(priceText(offer))}">
             <div class="offer-card__head">
               <img src="${escapeHtml(offer.image)}" alt="${escapeHtml(offer.imageAlt)}" width="64" height="64" ${loading} decoding="async">
-              <span class="offer-card__category">${escapeHtml(offer.categoryLabel)}</span>
             </div>
             <h3>${escapeHtml(offer.title)}</h3>
             <p class="offer-card__benefit">${escapeHtml(offer.oneLineBenefit)}</p>
             <div class="offer-card__price-row">
               <p class="offer-card__price">${escapeHtml(offer.currentPrice)}${offer.priceSuffix ? `<small>${escapeHtml(offer.priceSuffix)}</small>` : ""}</p>
-${[oldPrice, saving].filter(Boolean).map((item) => `              ${item}`).join("\n")}
+${[oldPrice].filter(Boolean).map((item) => `              ${item}`).join("\n")}
             </div>
             <ul class="offer-card__facts">
 ${offer.keyFacts.map((fact) => `              <li>${escapeHtml(fact)}</li>`).join("\n")}
@@ -99,19 +95,20 @@ ${head({
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow">MaL.BZ</p>
-        <h1 id="hero-title">Софт, реклама и услуги для малого бизнеса — по специальным ценам</h1>
-        <p class="hero__lead">Выберите предложение, посмотрите условия и сразу напишите по нему в Telegram.</p>
-        <a class="button button--primary hero__button" href="#offers">Смотреть предложения</a>
+        <div class="hero__copy">
+          <h1 id="hero-title">Софт, реклама и услуги для малого бизнеса — по специальным ценам</h1>
+          <p class="hero__lead">Выберите предложение, посмотрите условия и сразу напишите по нему в Telegram.</p>
+          <a class="button button--primary hero__button" href="#offers">Смотреть предложения</a>
+        </div>
+        <picture class="hero__visual">
+          <source srcset="assets/hero-marketplace-pencil-v2-720.webp 720w, assets/hero-marketplace-pencil-v2.webp 1200w" sizes="(max-width: 760px) calc(100vw - 28px), 560px" type="image/webp">
+          <img src="assets/hero-marketplace-pencil-v2.png" alt="Витрина предложений для малого бизнеса" width="1200" height="667" fetchpriority="high">
+        </picture>
       </section>
 
       <section class="catalog" id="offers" aria-labelledby="offers-title">
         <div class="catalog__heading">
-          <div>
-            <p class="eyebrow">${offers.length} предложений</p>
-            <h2 id="offers-title">Выберите подходящий оффер</h2>
-          </div>
-          <p>Цена и главное условие видны сразу. Подробности — на странице предложения.</p>
+          <h2 id="offers-title">Выберите подходящий оффер</h2>
         </div>
         <div class="offer-grid">
 ${cards}
@@ -214,15 +211,13 @@ ${head({
       <section class="offer-hero">
         <div class="offer-hero__identity">
           <img class="offer-hero__icon" src="${prefix}${escapeHtml(offer.image)}" alt="${escapeHtml(offer.imageAlt)}" width="72" height="72" fetchpriority="high" decoding="async">
-          <p class="eyebrow">${escapeHtml(offer.categoryLabel)}</p>
         </div>
         <h1>${escapeHtml(offer.title)}</h1>
         <p class="offer-hero__lead">${escapeHtml(offer.oneLineBenefit)}</p>
         <div class="offer-price-row">
           <p class="offer-price">${escapeHtml(offer.currentPrice)}${offer.priceSuffix ? `<small>${escapeHtml(offer.priceSuffix)}</small>` : ""}</p>
 ${[
-  offer.oldPrice ? `<span class="offer-old-price">${escapeHtml(offer.oldPrice)}</span>` : "",
-  offer.saving ? `<span class="offer-saving">${escapeHtml(offer.saving)}</span>` : ""
+  offer.oldPrice ? `<span class="offer-old-price">${escapeHtml(offer.oldPrice)}</span>` : ""
 ].filter(Boolean).map((item) => `          ${item}`).join("\n")}
         </div>
         <ul class="offer-hero__facts">
