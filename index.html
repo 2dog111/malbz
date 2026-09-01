@@ -3,751 +3,286 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MaL.BZ - офферы, сделки и скидки для малого бизнеса</title>
-    <meta
-      name="description"
-      content="Витрина предложений для предпринимателей: софт, реклама и услуги по цене ниже обычной."
-    >
+    <title>MaL.BZ — инструменты и услуги для малого бизнеса</title>
+    <meta name="description" content="Софт, AI, реклама и внедрение для малого бизнеса: цена, способ получения, срок, ограничения и поддержка по каждому предложению.">
+    <link rel="canonical" href="https://mal.bz/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MaL.BZ — инструменты и услуги для малого бизнеса">
+    <meta property="og:description" content="Проверяем цену, способ получения, ограничения и поддержку по каждому предложению.">
+    <meta property="og:url" content="https://mal.bz/">
+    <meta property="og:image" content="https://mal.bz/assets/hero-marketplace-pencil-v2.png">
     <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="market.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "MaL.BZ",
+        "url": "https://mal.bz/",
+        "description": "Инструменты и услуги для малого бизнеса — с понятной экономикой."
+      }
+    </script>
+    <script src="assets/site.js?v=20260901" defer></script>
   </head>
   <body>
-    <header class="site-header" aria-label="Бренд">
-      <div class="brand-lockup">
-        <img
-          class="brand-mark"
-          src="assets/malbz-logo.png"
-          alt="MaL.BZ"
-          width="320"
-          height="320"
-        >
+    <a class="skip-link" href="#offers">К предложениям</a>
 
-        <div class="brand-text">
-          <span class="brand-domain">MaL.BZ</span>
-        </div>
-
-        <div class="brand-business-name" aria-label="Малый Бизнес">
-          Малый Бизнес
-        </div>
-
-        <a
-          class="brand-add-offer"
-          href="https://t.me/am7am"
-          aria-label="Добавить своё предложение на витрину через Telegram"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span class="telegram-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-            </svg>
-          </span>
-          <span>Добавить своё предложение на витрину</span>
-        </a>
-      </div>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="MaL.BZ — главная">
+        <img src="assets/malbz-logo.png" alt="" width="56" height="56">
+        <span>MaL.BZ</span>
+      </a>
+      <a
+        class="header-link js-telegram"
+        href="https://t.me/am7am"
+        data-message="Здравствуйте. Хочу предложить оффер для MaL.BZ. Подскажите требования к публикации."
+        data-event="supplier_submit"
+        data-offer-id="supplier"
+      >Предложить свой оффер</a>
     </header>
 
-    <main class="page">
-      <section class="hero" aria-label="Первый экран">
-        <div class="hero__copy">
-          <h1 class="hero-title">
-            <span class="hero-title__main">Офферы. Сделки. Скидки.</span>
-          </h1>
-          <p class="hero__lead">
-            Софт, реклама и услуги по цене ниже обычной.
-          </p>
-          <div class="hero-deal-cta-wrap">
-            <a
-              class="hero-deal-cta"
-              href="https://t.me/am7am"
-              aria-label="Написать менеджеру в Telegram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="telegram-icon hero-deal-cta__telegram" aria-hidden="true">
-                <svg viewBox="0 0 24 24" focusable="false">
-                  <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-                </svg>
-              </span>
-              <span class="hero-deal-cta__text">
-                Понравилось предложение? Написать менеджеру
-              </span>
-            </a>
-          </div>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">MaL.BZ</p>
+        <h1 id="hero-title">Инструменты и услуги для малого бизнеса — с понятной экономикой</h1>
+        <p class="hero__lead">Софт, AI, реклама и внедрение. Для каждого предложения показываем цену, способ получения, срок, ограничения и кто отвечает за поддержку.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#offers">Смотреть предложения</a>
+          <a
+            class="button js-telegram"
+            href="https://t.me/am7am"
+            data-message="Здравствуйте. Хочу предложить оффер для MaL.BZ. Подскажите требования к публикации."
+            data-event="supplier_submit"
+            data-offer-id="supplier"
+          >Предложить свой оффер</a>
         </div>
+        <ul class="trust-line" aria-label="Что указываем в предложениях">
+          <li>Цена проверена</li>
+          <li>Условия получения</li>
+          <li>Возврат и замена</li>
+          <li>Поддержка</li>
+        </ul>
+      </section>
 
-        <div class="hero__visual" aria-label="Иллюстрация">
-          <picture>
-            <source srcset="assets/hero-marketplace-pencil-v2.webp" type="image/webp">
-            <img
-              src="assets/hero-marketplace-pencil-v2.png"
-              alt="Карандашная иллюстрация витрины предложений для малого бизнеса: цифровые сервисы, скидки и график роста"
-            >
-          </picture>
+      <section class="section" aria-labelledby="featured-title">
+        <div class="section-heading">
+          <p class="eyebrow">Короткий путь</p>
+          <h2 id="featured-title">Рекомендуем начать с этого</h2>
         </div>
+        <div class="featured-grid">
+          <article class="offer-card offer-card--featured" data-offer-id="MAL-ADS-SETUP-01" data-category="ads" data-price="1500-rub-hour">
+            <div class="offer-card__head">
+              <img src="assets/ads-setup-icon-v2.webp" alt="" width="64" height="64">
+              <span class="offer-card__type">Ручная услуга</span>
+            </div>
+            <h3>Запустить Яндекс Директ и аналитику</h3>
+            <p>Первичная настройка занимает 2 часа. Дальнейшая работа оплачивается по фактическому времени.</p>
+            <p class="offer-card__price">1 500 ₽/час</p>
+            <ul class="offer-card__facts">
+              <li>Кампании, Метрика, цели и UTM</li>
+              <li>Отчёт по выполненной работе</li>
+              <li>Цена проверена 01.09.2026</li>
+            </ul>
+            <a class="text-link" href="offers/yandex-direct-setup/" data-event="offer_details">Условия и состав работы</a>
+          </article>
 
-        <div class="live-deals" aria-label="Актуальные предложения">
-          <a class="live-deal" href="#direct-balance-offer">
-            <span>Пополнение Яндекс Директ на 45 000 ₽</span>
-            <strong>за 35 000 ₽</strong>
-          </a>
-          <a class="live-deal" href="#chatgpt-pro-offer">
-            <span>ChatGPT Pro</span>
-            <strong>$195</strong>
-          </a>
-          <a class="live-deal" href="#lusiesta-offer">
-            <span>Lusiesta Studio</span>
-            <strong>12 900 ₽</strong>
-          </a>
-          <a class="live-deal" href="#telegram-parser-offer">
-            <span>Telegram Parser 5.0</span>
-            <strong>3 900 ₽</strong>
-          </a>
+          <article class="offer-card offer-card--featured" data-offer-id="MAL-WEB-01" data-category="sites services" data-price="from-19900-rub">
+            <div class="offer-card__head">
+              <img src="assets/landing-studio-icon-v2.webp" alt="" width="64" height="64">
+              <span class="offer-card__type">Ручная услуга</span>
+            </div>
+            <h3>Лендинг, который ведёт к заявке</h3>
+            <p>Структура, текст и дизайн под одно целевое действие. Объём и срок фиксируем до начала работы.</p>
+            <p class="offer-card__price">от 19 900 ₽</p>
+            <ul class="offer-card__facts">
+              <li>Цена зависит от согласованного объёма</li>
+              <li>Результат — готовая посадочная страница</li>
+              <li>Цена проверена 01.09.2026</li>
+            </ul>
+            <a class="text-link" href="offers/landing-page/" data-event="offer_details">Посмотреть условия</a>
+          </article>
+
+          <article class="offer-card offer-card--featured" data-offer-id="MAL-OPENAI-01" data-category="ai" data-price="quote-before-payment">
+            <div class="offer-card__head">
+              <img src="assets/chatgpt-api-icon-v2.webp" alt="" width="64" height="64">
+              <span class="offer-card__type">Управляемый сервис</span>
+            </div>
+            <h3>GPT‑5.6 API через управляемый шлюз</h3>
+            <p>Отдельный ключ к шлюзу MaL.BZ, лимиты расходов, статистика и помощь с подключением.</p>
+            <p class="offer-card__price">Итог в ₽ — до оплаты</p>
+            <ul class="offer-card__facts">
+              <li>Standard / short context</li>
+              <li>Не передаём OpenAI API key</li>
+              <li>Тариф проверен 01.09.2026</li>
+            </ul>
+            <a class="text-link" href="offers/gpt-5-6-gateway/" data-event="offer_details">Тарифы и ограничения</a>
+          </article>
         </div>
       </section>
 
-      <section class="founder-offers" aria-label="Офферы для предпринимателей">
-        <div class="offer-cards" aria-label="Офферы для предпринимателей">
-          <article class="offer-card offer-card--direct-balance" id="direct-balance-offer">
-            <div class="direct-balance-copy">
-              <div class="offer-service-title">
-                <img
-                  class="offer-service-icon"
-                  src="assets/yandex-balance-icon-v2.webp"
-                  alt=""
-                  width="320"
-                  height="320"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <p class="direct-balance-copy__product">
-                  Яндекс Директ под ключ
-                </p>
-              </div>
-
-              <p class="direct-balance-copy__gift">
-                <span class="direct-balance-copy__gift-mark" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false">
-                    <path d="M12 5v14M5 12h14"/>
-                  </svg>
-                </span>
-                <span>
-                  За <strong>35 000 руб</strong> вы получаете
-                  <strong>45 000 руб</strong> на рекламном балансе.
-                </span>
-              </p>
-
-              <p class="direct-balance-copy__saving">
-                Экономите 10 000 руб уже при пополнении.
-              </p>
-
-              <p class="direct-balance-copy__scope">
-                <span>В стоимость также входит настройка Яндекс Директ и аналитики.</span>
-                Собираем запросы и минус-слова, строим кампании, пишем объявления,
-                задаём географию и расписание показов, подключаем Яндекс Метрику,
-                цели и UTM-метки, выбираем стратегии и бюджеты. После запуска
-                проверяем поисковые запросы и отключаем нецелевые показы.
-              </p>
-
-              <p class="direct-balance-copy__hours">
-                12 часов работы специалиста входят в комплекс.
-              </p>
-
-              <p class="direct-balance-copy__price">
-                <span>Цена комплекса</span>
-                <strong>35 000 руб</strong>
-              </p>
-            </div>
-
-            <a
-              class="offer-card__telegram"
-              href="https://t.me/am7am"
-              aria-label="Написать менеджеру в Telegram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="telegram-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" focusable="false">
-                  <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-                </svg>
-              </span>
-              <span>Написать менеджеру</span>
-            </a>
-          </article>
-
-          <article class="offer-card offer-card--chatgpt-pro" id="chatgpt-pro-offer">
-            <div class="chatgpt-pro-copy">
-              <div class="offer-service-title">
-                <img
-                  class="offer-service-icon"
-                  src="assets/chatgpt-pro-icon-v2.webp"
-                  alt=""
-                  width="320"
-                  height="320"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <p class="chatgpt-pro-copy__product">
-                  ChatGPT Pro на месяц за $195 в рублях по курсу
-                </p>
-              </div>
-
-              <div class="chatgpt-pro-copy__price">
-                <span>Официальная Pro-подписка на 1 месяц</span>
-                <span>Стандартная цена: $200 в месяц</span>
-              </div>
-
-              <p class="chatgpt-pro-copy__lead">
-                Получаете свежий аккаунт с активной Pro-версией ChatGPT.
-              </p>
-
-              <p class="chatgpt-pro-copy__renewal">
-                Продлевайте тот же аккаунт через нас каждый месяц.
-              </p>
-
-              <div class="chatgpt-pro-copy__steps" aria-label="Как это работает">
-                <p class="chatgpt-pro-copy__label">Как это работает</p>
-                <div class="chatgpt-pro-copy__step">
-                  <span>1</span>
-                  <p>Оплачиваете месячный пакет.</p>
-                </div>
-                <div class="chatgpt-pro-copy__step">
-                  <span>2</span>
-                  <p>В течение 24 часов получаете логин, пароль и полный доступ к специально созданной для вас почте.</p>
-                </div>
-              </div>
-
-              <p class="chatgpt-pro-copy__trust">
-                При блокировке заменим аккаунт в течение 48 часов.
-              </p>
-
-              <p class="chatgpt-pro-copy__payment">
-                Оплата: крипта и перевод.
-              </p>
-            </div>
-            <a
-              class="offer-card__telegram"
-              href="https://t.me/am7am"
-              aria-label="Написать менеджеру в Telegram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="telegram-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" focusable="false">
-                  <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-                </svg>
-              </span>
-              <span>Написать менеджеру</span>
-            </a>
-          </article>
-
-          <article class="offer-card offer-card--chatgpt">
-            <div class="chatgpt-copy">
-              <div class="offer-service-title">
-                <img
-                  class="offer-service-icon chatgpt-copy__icon"
-                  src="assets/chatgpt-api-icon-v2.webp"
-                  alt=""
-                  width="320"
-                  height="320"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <p class="chatgpt-copy__product">
-                  API-доступ к ChatGPT 5.6 Pro (Sol Terra Luna)
-                </p>
-              </div>
-
-              <p class="chatgpt-copy__payment">
-                Оплата: безнал с НДС на российское ООО (ОСНО)
-              </p>
-
-              <p class="chatgpt-copy__promo">
-                Первые 3 месяца — скидка 37% от рыночной цены
-              </p>
-
-              <div class="chatgpt-copy__pricing" aria-label="Цены за 1 миллион токенов">
-                <div class="chatgpt-copy__pricing-head">
-                  <span>Модель</span>
-                  <span>Вход / 1 млн токенов</span>
-                  <span>Выход / 1 млн токенов</span>
-                </div>
-                <div class="chatgpt-copy__pricing-row">
-                  <span>GPT-5.6 Sol</span>
-                  <span>269 ₽</span>
-                  <span>1 610 ₽</span>
-                </div>
-                <div class="chatgpt-copy__pricing-row">
-                  <span>GPT-5.6 Terra</span>
-                  <span>135 ₽</span>
-                  <span>805 ₽</span>
-                </div>
-                <div class="chatgpt-copy__pricing-row">
-                  <span>GPT-5.6 Luna</span>
-                  <span>54 ₽</span>
-                  <span>322 ₽</span>
-                </div>
-              </div>
-
-              <div class="chatgpt-copy__group">
-                <p class="chatgpt-copy__label">Для кого:</p>
-                <p>
-                  Разработчики, владельцы сайтов, агентства, SaaS-сервисы, Telegram-боты, онлайн-школы, автоматизаторы, стартапы, внутренние AI-инструменты.
-                </p>
-              </div>
-
-              <div class="chatgpt-copy__group chatgpt-copy__details">
-                <p>
-                  API-доступ к ChatGPT 5.6 Pro (Sol Terra Luna) для текста, кода, анализа данных, обработки запросов и автоматизации.
-                </p>
-                <p>
-                  Встройте модель в продукт, проверьте её на реальных задачах, посчитайте себестоимость и запускайте AI-функции без долгой подготовки.
-                </p>
-                <p>Понятная цена, простая документация и помощь при подключении.</p>
-                <p>Лимиты защищают бюджет от случайного перерасхода.</p>
-              </div>
-            </div>
-            <a
-              class="offer-card__telegram"
-              href="https://t.me/am7am"
-              aria-label="Написать менеджеру в Telegram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="telegram-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" focusable="false">
-                  <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-                </svg>
-              </span>
-              <span>Написать менеджеру</span>
-            </a>
-          </article>
-
-          <article class="offer-card offer-card--direct">
-            <div class="offer-card__top">
-              <span class="offer-card__tag">
-                <img
-                  class="offer-card__tag-icon offer-card__tag-icon--bill"
-                  src="assets/yandex-account-icon-v2.webp"
-                  alt=""
-                  width="320"
-                  height="320"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <span>Аккаунты Яндекс Директ без НДС</span>
-              </span>
-              <div class="offer-card__saving" aria-label="Экономия 22 процента">
-                <span>Экономия</span>
-                <strong>22%</strong>
-              </div>
-            </div>
-
-            <div class="offer-card__main">
-              <p>
-                Оформляем на себя или на вас. Доступ к аккаунту только у вас.
-              </p>
-            </div>
-
-            <div class="offer-card__price offer-card__price--direct">
-              <p>
-                <span class="price-blue">Цена аккаунта 200$,</span> но эти 200$
-                уже лежат на балансе рекламного кабинета.
-                <strong>По сути цена аккаунта = 0$.</strong>
-              </p>
-            </div>
-            <a
-              class="offer-card__telegram"
-              href="https://t.me/am7am"
-              aria-label="Написать менеджеру в Telegram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="telegram-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" focusable="false">
-                  <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-                </svg>
-              </span>
-              <span>Написать менеджеру</span>
-            </a>
-          </article>
-
-          <article class="offer-card offer-card--ads-setup">
-            <div class="ads-setup-copy">
-              <div class="offer-service-title">
-                <img
-                  class="offer-service-icon"
-                  src="assets/ads-setup-icon-v2.webp"
-                  alt=""
-                  width="320"
-                  height="320"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <p class="ads-setup-copy__badge">
-                  Настройка Яндекс Директ и Google Ads для поиска и YouTube
-                </p>
-              </div>
-
-              <p class="ads-setup-copy__experience">
-                12 лет практического опыта. Работу и опыт можно проверить по цифровому следу.
-              </p>
-
-              <p class="ads-setup-copy__rate">
-                Час работы — <strong>1 500 руб</strong>. Предоставляем отчёт.
-              </p>
-
-              <p class="ads-setup-copy__result">
-                Первичная настройка Яндекс Директ и аналитики — за 2 часа.
-              </p>
-            </div>
-            <a
-              class="offer-card__telegram"
-              href="https://t.me/am7am"
-              aria-label="Написать менеджеру в Telegram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="telegram-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" focusable="false">
-                  <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-                </svg>
-              </span>
-              <span>Написать менеджеру</span>
-            </a>
-          </article>
-
-          <article class="offer-card offer-card--landing">
-            <div class="landing-copy">
-              <div class="offer-service-title">
-                <img
-                  class="offer-service-icon"
-                  src="assets/landing-studio-icon-v2.webp"
-                  alt=""
-                  width="320"
-                  height="320"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <p class="landing-copy__badge">
-                  Лендинги и сайты, которые ведут к заявке
-                </p>
-              </div>
-
-              <p class="landing-copy__promise">
-                Продуманная структура под вашу аудиторию и предложение
-              </p>
-
-              <p>
-                Текст и дизайн работают на одно целевое действие.
-              </p>
-
-              <p class="landing-copy__price">
-                12 000 рублей
-              </p>
-            </div>
-            <a
-              class="offer-card__telegram"
-              href="https://t.me/am7am"
-              aria-label="Написать менеджеру в Telegram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="telegram-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" focusable="false">
-                  <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-                </svg>
-              </span>
-              <span>Написать менеджеру</span>
-            </a>
-          </article>
-
-          <article class="offer-card offer-card--video">
-            <div class="video-copy">
-              <div class="offer-service-title">
-                <img
-                  class="offer-service-icon"
-                  src="assets/livid-video-icon-v2.webp"
-                  alt=""
-                  width="320"
-                  height="320"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <p class="video-copy__product">
-                  Livid
-                </p>
-              </div>
-
-              <p class="video-copy__headline">
-                Показывайте видео без рекламы, чужих рекомендаций и отвлекающих элементов.
-              </p>
-
-              <p class="video-copy__subline">
-                Плеер показывает только ваше видео. Оформление, доступ и просмотр — под вашим контролем.
-              </p>
-
-              <p class="video-copy__price">
-                11 000 ₽
-              </p>
-
-              <p class="video-copy__lifetime">
-                Пожизненная лицензия (Lifetime)
-              </p>
-
-              <div class="video-copy__columns">
-                <div class="video-copy__group">
-                  <p class="video-copy__label">Подходит для</p>
-                  <p>
-                    Онлайн-школ • авторов курсов • бизнеса • агентств • маркетологов • видеографов • SaaS • корпоративного обучения • владельцев сайтов.
-                  </p>
-                </div>
-
-                <div class="video-copy__group">
-                  <p class="video-copy__label">Тариф включает</p>
-                  <p>• 500 ГБ хранения и 2 ТБ трафика в месяц</p>
-                  <p>• Видео в 4K и встраивание на сайт</p>
-                  <p>• Свой логотип и полная настройка плеера</p>
-                  <p>• Закрытые ссылки и защита паролем</p>
-                  <p>• Замена видео без изменения ссылки</p>
-                  <p>• Комментарии с привязкой ко времени</p>
-                  <p>• Автоматические транскрипции</p>
-                  <p>• Без логотипа Livid</p>
-                  <p>• Пожизненные обновления Pro-тарифа</p>
-                </div>
-              </div>
-            </div>
-            <a
-              class="offer-card__telegram"
-              href="https://t.me/am7am"
-              aria-label="Написать менеджеру в Telegram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="telegram-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" focusable="false">
-                  <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-                </svg>
-              </span>
-              <span>Написать менеджеру</span>
-            </a>
-          </article>
-
-          <article class="offer-card offer-card--sendfox">
-            <div class="sendfox-copy">
-              <div class="offer-service-title">
-                <img
-                  class="offer-service-icon"
-                  src="assets/sendfox-email-icon-v2.webp"
-                  alt=""
-                  width="320"
-                  height="320"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <p class="sendfox-copy__product">
-                  SendFox — email-маркетинг без ежемесячной оплаты
-                </p>
-              </div>
-
-              <p class="sendfox-copy__subline">
-                Рассылки, формы подписки и автоматические цепочки писем для авторов, экспертов и малого бизнеса.
-              </p>
-
-              <p class="sendfox-copy__price">
-                6 500 руб за пожизненный доступ
-              </p>
-
-              <p class="sendfox-copy__usual">
-                Обычная цена: 29 000 ₽
-              </p>
-
-              <div class="sendfox-copy__group">
-                <p class="sendfox-copy__label">Для кого</p>
-                <p>
-                  Авторы • эксперты • агентства • онлайн-школы • магазины • блоги • телеграм-каналы • подкасты • YouTube-каналы • владельцы сайтов • малый бизнес.
-                </p>
-              </div>
-
-              <div class="sendfox-copy__group">
-                <p class="sendfox-copy__label">Что делает</p>
-                <p>
-                  Собирайте подписчиков, отправляйте письма, запускайте автоматические серии и следите за ростом базы.
-                </p>
-                <p>
-                  Создайте страницу подписки, добавьте форму на сайт, отправьте разовую рассылку или настройте автоматическую цепочку писем.
-                </p>
-                <p>
-                  Подходит для новостей, прогрева аудитории, анонсов, запусков, повторных касаний, лид-магнитов и регулярной связи с клиентами.
-                </p>
-              </div>
-
-              <div class="sendfox-copy__group sendfox-copy__features">
-                <p class="sendfox-copy__label">Что входит</p>
-                <p>• 5 000 контактов и 300 000 отправок</p>
-                <p>• Пожизненный доступ и будущие обновления плана</p>
-                <p>• Неограниченные автоматические цепочки</p>
-                <p>• Неограниченные страницы и формы подписки</p>
-                <p>• Редактор писем без кода</p>
-                <p>• Отправка писем по расписанию</p>
-                <p>• Статистика открытий, переходов и роста базы</p>
-                <p>• Проверка качества и улучшенная доставка</p>
-                <p>• Списки и группы подписчиков</p>
-                <p>• Встраивание форм на сайт</p>
-                <p>• API и более 30 интеграций</p>
-                <p>• Галерея страниц подписки</p>
-                <p>• 60 дней на возврат</p>
-              </div>
-
-              <p class="sendfox-copy__final">
-                Покупаете один раз. Дальше SendFox помогает регулярно возвращать аудиторию к вашим материалам и предложениям.
-              </p>
-            </div>
-            <a
-              class="offer-card__telegram"
-              href="https://t.me/am7am"
-              aria-label="Написать менеджеру в Telegram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="telegram-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" focusable="false">
-                  <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-                </svg>
-              </span>
-              <span>Написать менеджеру</span>
-            </a>
-          </article>
-
-          <article class="offer-card offer-card--lusiesta" id="lusiesta-offer">
-            <div class="lusiesta-copy">
-              <div class="offer-service-title">
-                <img
-                  class="offer-service-icon"
-                  src="assets/lusiesta-farm-icon-v2.webp"
-                  alt=""
-                  width="320"
-                  height="320"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <p class="lusiesta-copy__product">Lusiesta Studio</p>
-              </div>
-
-              <p class="lusiesta-copy__headline">
-                Управляйте Android-фермой для Instagram, YouTube и TikTok
-              </p>
-
-              <p class="lusiesta-copy__lead">
-                Подключайте телефоны, планируйте публикации и прогрев, управляйте прокси, APK и клонами приложений из одного окна.
-              </p>
-
-              <div class="lusiesta-copy__features" aria-label="Основные возможности">
-                <span>Автопостинг</span>
-                <span>Прогрев аккаунтов</span>
-                <span>Прокси</span>
-                <span>APK и клоны</span>
-              </div>
-
-              <p class="lusiesta-copy__license">
-                Лицензия на 1 год для одного компьютера. До 20 устройств.
-              </p>
-
-              <p class="lusiesta-copy__price">12 900 рублей</p>
-            </div>
-
-            <div class="offer-card__actions">
-              <a class="offer-card__details" href="lusiesta-studio/">
-                <span>Подробнее</span>
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M5 12h14M14 7l5 5-5 5"/>
-                </svg>
-              </a>
-              <a
-                class="offer-card__telegram"
-                href="https://t.me/am7am"
-                aria-label="Написать менеджеру в Telegram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="telegram-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false">
-                    <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-                  </svg>
-                </span>
-                <span>Написать менеджеру</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="offer-card offer-card--telegram-parser" id="telegram-parser-offer">
-            <div class="telegram-parser-copy">
-              <div class="offer-service-title">
-                <img
-                  class="offer-service-icon"
-                  src="assets/telegram-parser-icon-v2.webp"
-                  alt=""
-                  width="320"
-                  height="320"
-                  loading="lazy"
-                  decoding="async"
-                >
-                <p class="telegram-parser-copy__product">
-                  Telegram Target Parser 5.0
-                </p>
-              </div>
-
-              <p class="telegram-parser-copy__headline">
-                Находит Telegram-каналы, чаты и активную аудиторию под вашу задачу
-              </p>
-
-              <p class="telegram-parser-copy__lead">
-                Опишите, кого нужно найти. Программа расширит запросы, подберёт направления поиска и соберёт релевантные площадки и аудиторию.
-              </p>
-
-              <div class="telegram-parser-copy__features" aria-label="Основные возможности">
-                <span>8 режимов поиска</span>
-                <span>Deep Search</span>
-                <span>AI-подбор ключей</span>
-                <span>CSV и XLSX</span>
-              </div>
-
-              <p class="telegram-parser-copy__format">
-                Windows-программа с управлением через Telegram-бота. Бессрочная лицензия, подробное руководство и обновления ветки 5.x.
-              </p>
-
-              <p class="telegram-parser-copy__price">
-                3 900 рублей
-              </p>
-            </div>
-
-            <div class="offer-card__actions">
-              <a class="offer-card__details" href="telegram-target-parser-5/">
-                <span>Подробнее</span>
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M5 12h14M14 7l5 5-5 5"/>
-                </svg>
-              </a>
-              <a
-                class="offer-card__telegram"
-                href="https://t.me/am7am"
-                aria-label="Написать менеджеру в Telegram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="telegram-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" focusable="false">
-                    <path d="M21.7 4.1c.3-1.2-.9-2-2-1.6L3.1 8.9c-1.2.5-1.2 2.1.1 2.5l4.1 1.3 1.6 5.2c.4 1.2 1.8 1.4 2.5.4l2.3-3.2 4.2 3.1c1 .7 2.4.2 2.6-1.1l2.2-13Zm-4.5 2.7-7.9 7.4-.3 2.5-1-3.3 9.2-6.6Z"/>
-                  </svg>
-                </span>
-                <span>Написать менеджеру</span>
-              </a>
-            </div>
-          </article>
-
+      <section class="section" id="offers" aria-labelledby="offers-title">
+        <div class="section-heading">
+          <p class="eyebrow">Витрина</p>
+          <h2 id="offers-title">Все предложения</h2>
         </div>
+        <div class="filters" aria-label="Фильтр предложений">
+          <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">Все</button>
+          <button type="button" class="filter" data-filter="ai" aria-pressed="false">AI и автоматизация</button>
+          <button type="button" class="filter" data-filter="sites" aria-pressed="false">Сайты и хостинг</button>
+          <button type="button" class="filter" data-filter="ads" aria-pressed="false">Реклама и аналитика</button>
+          <button type="button" class="filter" data-filter="sales" aria-pressed="false">Продажи и CRM</button>
+          <button type="button" class="filter" data-filter="content" aria-pressed="false">Контент и коммуникации</button>
+          <button type="button" class="filter" data-filter="services" aria-pressed="false">Услуги</button>
+        </div>
+
+        <p class="filter-result" role="status" aria-live="polite">Показано 5 предложений</p>
+        <div class="offer-grid">
+          <article class="offer-card" data-offer-id="MAL-OPENAI-01" data-category="ai" data-price="quote-before-payment">
+            <div class="offer-card__head">
+              <img src="assets/chatgpt-api-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
+              <span class="offer-card__type">Управляемый сервис</span>
+            </div>
+            <h3>GPT‑5.6 API через управляемый шлюз</h3>
+            <p>Ключ к шлюзу MaL.BZ, лимиты расходов, статистика и помощь с подключением.</p>
+            <p class="offer-card__price">Итог в ₽ — до оплаты</p>
+            <ul class="offer-card__facts">
+              <li>Standard / short context</li>
+              <li>Курс фиксируется на дату оплаты</li>
+              <li>НДС и наценка уточняются</li>
+              <li>Проверено 01.09.2026</li>
+            </ul>
+            <div class="offer-card__actions">
+              <a class="button button--small" href="offers/gpt-5-6-gateway/" data-event="offer_details">Подробнее</a>
+              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «GPT-5.6 API через управляемый шлюз», код MAL-OPENAI-01. Подскажите срок запуска и итоговую стоимость." data-event="telegram_click">Уточнить тариф</a>
+            </div>
+          </article>
+
+          <article class="offer-card" data-offer-id="MAL-ADS-SETUP-01" data-category="ads" data-price="1500-rub-hour">
+            <div class="offer-card__head">
+              <img src="assets/ads-setup-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
+              <span class="offer-card__type">Ручная услуга</span>
+            </div>
+            <h3>Настройка Яндекс Директ и аналитики</h3>
+            <p>Поисковые кампании, Метрика, цели и UTM. Первичная настройка — 2 часа.</p>
+            <p class="offer-card__price">1 500 ₽/час</p>
+            <ul class="offer-card__facts">
+              <li>Первые 2 часа — первичная настройка</li>
+              <li>Дальше — работа по согласованным задачам</li>
+              <li>Поддержка специалиста</li>
+              <li>Проверено 01.09.2026</li>
+            </ul>
+            <div class="offer-card__actions">
+              <a class="button button--small" href="offers/yandex-direct-setup/" data-event="offer_details">Подробнее</a>
+              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «Настройка Яндекс Директ и аналитики», код MAL-ADS-SETUP-01. Подскажите срок запуска и итоговую стоимость." data-event="telegram_click">Обсудить запуск</a>
+            </div>
+          </article>
+
+          <article class="offer-card" data-offer-id="MAL-WEB-01" data-category="sites services" data-price="from-19900-rub">
+            <div class="offer-card__head">
+              <img src="assets/landing-studio-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
+              <span class="offer-card__type">Ручная услуга</span>
+            </div>
+            <h3>Лендинг под одно целевое действие</h3>
+            <p>Структура, текст и дизайн под аудиторию и предложение бизнеса.</p>
+            <p class="offer-card__price">от 19 900 ₽</p>
+            <ul class="offer-card__facts">
+              <li>Цена и срок после согласования объёма</li>
+              <li>Внедрение под задачу клиента</li>
+              <li>Поддержка исполнителя</li>
+              <li>Проверено 01.09.2026</li>
+            </ul>
+            <div class="offer-card__actions">
+              <a class="button button--small" href="offers/landing-page/" data-event="offer_details">Подробнее</a>
+              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «Лендинг под одно целевое действие», код MAL-WEB-01. Подскажите срок запуска и итоговую стоимость." data-event="telegram_click">Обсудить проект</a>
+            </div>
+          </article>
+
+          <article class="offer-card" data-offer-id="MAL-LUSIESTA-01" data-category="content" data-price="12900-rub-year">
+            <div class="offer-card__head">
+              <img src="assets/lusiesta-farm-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
+              <span class="offer-card__type">Программная лицензия</span>
+            </div>
+            <h3>Управление Android‑фермой из одного окна</h3>
+            <p>Планирование публикаций, устройства, прокси, APK и клоны приложений.</p>
+            <p class="offer-card__price">12 900 ₽ на 1 год</p>
+            <ul class="offer-card__facts">
+              <li>1 компьютер, до 20 устройств</li>
+              <li>Правила платформ применяются</li>
+              <li>Риск блокировки зависит от сценария</li>
+              <li>Проверено 01.09.2026</li>
+            </ul>
+            <div class="offer-card__actions">
+              <a class="button button--small" href="offers/lusiesta-studio/" data-event="offer_details">Подробнее</a>
+              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «Lusiesta Studio», код MAL-LUSIESTA-01. Подскажите срок запуска и итоговую стоимость." data-event="telegram_click">Уточнить запуск</a>
+            </div>
+          </article>
+
+          <article class="offer-card" data-offer-id="MAL-TG-PARSER-01" data-category="ai content" data-price="3900-rub-once">
+            <div class="offer-card__head">
+              <img src="assets/telegram-parser-icon-v2.webp" alt="" width="64" height="64" loading="lazy">
+              <span class="offer-card__type">Программная лицензия</span>
+            </div>
+            <h3>Найти Telegram‑каналы, чаты и аудиторию</h3>
+            <p>8 режимов поиска, AI‑подбор ключей, Deep Search и экспорт в CSV/XLSX.</p>
+            <p class="offer-card__price">3 900 ₽, бессрочно</p>
+            <ul class="offer-card__facts">
+              <li>Windows‑программа и Telegram‑бот</li>
+              <li>Обновления ветки 5.x</li>
+              <li>Не использовать для спама</li>
+              <li>Проверено 01.09.2026</li>
+            </ul>
+            <div class="offer-card__actions">
+              <a class="button button--small" href="offers/telegram-target-parser-5/" data-event="offer_details">Подробнее</a>
+              <a class="text-link js-telegram" href="https://t.me/am7am" data-message="Здравствуйте. Интересует «Telegram Target Parser 5.0», код MAL-TG-PARSER-01. Подскажите срок запуска и итоговую стоимость." data-event="telegram_click">Уточнить запуск</a>
+            </div>
+          </article>
+        </div>
+        <div class="empty-state" hidden>
+          <p>В этой категории пока нет опубликованных предложений.</p>
+          <button type="button" class="button" data-filter-reset>Показать все</button>
+        </div>
+      </section>
+
+      <section class="section process" aria-labelledby="process-title">
+        <div class="section-heading">
+          <p class="eyebrow">Проверка</p>
+          <h2 id="process-title">Как мы проверяем предложения</h2>
+          <p>До публикации фиксируем шесть вещей. Если существенное условие неизвестно, оффер не попадает в открытую витрину.</p>
+        </div>
+        <ol class="check-list">
+          <li><span>01</span>Право продажи</li>
+          <li><span>02</span>Итоговая цена</li>
+          <li><span>03</span>Ограничения</li>
+          <li><span>04</span>Срок</li>
+          <li><span>05</span>Поддержка</li>
+          <li><span>06</span>Дата проверки</li>
+        </ol>
+      </section>
+
+      <section class="section faq" aria-labelledby="faq-title">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Перед оплатой</h2>
+        </div>
+        <details>
+          <summary>Почему часть цен указана «от» или уточняется?</summary>
+          <p>Так отмечены услуги с переменным объёмом или условиями. Итоговую сумму и состав фиксируем до оплаты.</p>
+        </details>
+        <details>
+          <summary>Что откроется по кнопке Telegram?</summary>
+          <p>Диалог с менеджером и готовым сообщением, где уже указаны название и код выбранного предложения. Сообщение не отправляется автоматически.</p>
+        </details>
+        <details>
+          <summary>Где смотреть ограничения и поддержку?</summary>
+          <p>Короткие условия есть в карточке. Полный состав, ограничения и владелец поддержки указаны на странице предложения.</p>
+        </details>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p><span>MaL.BZ</span> — инструменты и услуги для малого бизнеса.</p>
+      <a href="https://t.me/am7am">Telegram: @am7am</a>
+    </footer>
   </body>
 </html>
