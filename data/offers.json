@@ -70,7 +70,7 @@
     "keyFacts": [
       "Передача доступа в течение 24 часов",
       "Продление того же аккаунта",
-      "Замена при блокировке до 48 часов"
+      "Замена при блокировке"
     ],
     "image": "assets/chatgpt-pro-icon-v2.webp",
     "imageAlt": "ChatGPT Pro",
@@ -89,7 +89,7 @@
       {
         "title": "Замена и оплата",
         "paragraphs": [
-          "При блокировке заменим аккаунт в течение 48 часов.",
+          "При блокировке заменим аккаунт.",
           "Оплата: крипта и перевод."
         ]
       }
@@ -470,8 +470,8 @@
     "category": "software",
     "categoryLabel": "Софт и автоматизация",
     "priority": 100,
-    "title": "Поиск Telegram-каналов и аудитории — Target Parser 5.0",
-    "shortTitle": "Поиск аудитории — Target Parser 5.0",
+    "title": "TG Market Scan",
+    "shortTitle": "TG Market Scan",
     "oneLineBenefit": "Описываете, кого ищете. Парсер находит каналы, чаты и активную аудиторию и выгружает результат.",
     "currentPrice": "3 900 ₽",
     "oldPrice": null,
@@ -483,9 +483,9 @@
       "Обновления ветки 5.x"
     ],
     "image": "assets/telegram-parser-icon-v2.webp",
-    "imageAlt": "Telegram Target Parser 5.0",
+    "imageAlt": "TG Market Scan",
     "ctaLabel": "Купить за 3 900 ₽",
-    "telegramMessage": "Здравствуйте. Интересует «Поиск Telegram-каналов и аудитории — Target Parser 5.0» за 3 900 ₽. Код: MAL-TG-PARSER-01. Ссылка: https://mal.bz/offers/telegram-target-parser-5/",
+    "telegramMessage": "Здравствуйте. Интересует «TG Market Scan» за 3 900 ₽. Код: MAL-TG-PARSER-01. Ссылка: https://mal.bz/offers/telegram-target-parser-5/",
     "summary": "Опишите, кого нужно найти. Программа расширит запросы, подберёт направления поиска и соберёт релевантные площадки и аудиторию.",
     "sections": [
       {

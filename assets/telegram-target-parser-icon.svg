@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title">
-  <title id="title">Telegram Target Parser</title>
+  <title id="title">TG Market Scan</title>
   <defs>
     <linearGradient id="bg" x1="35" y1="28" x2="280" y2="292" gradientUnits="userSpaceOnUse">
       <stop stop-color="#F7FCFF"/>
