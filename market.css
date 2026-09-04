@@ -152,7 +152,6 @@ li {
 
 .hero,
 .catalog,
-.home-faq,
 .site-footer,
 .offer-page {
   width: min(100% - 40px, 1180px);
@@ -189,14 +188,6 @@ li {
   max-width: 17ch;
   margin-bottom: 16px;
   font-size: clamp(42px, 5vw, 62px);
-}
-
-.hero__lead {
-  max-width: 52ch;
-  margin-bottom: 20px;
-  color: var(--muted);
-  font-size: 19px;
-  line-height: 1.48;
 }
 
 .button {
@@ -240,8 +231,7 @@ li {
   margin-bottom: 28px;
 }
 
-.catalog__heading h2,
-.home-faq h2 {
+.catalog__heading h2 {
   margin-bottom: 0;
   font-size: clamp(34px, 4vw, 48px);
 }
@@ -375,14 +365,6 @@ li {
   align-items: center;
   color: var(--muted);
   font-size: 16px;
-}
-
-.home-faq {
-  padding: 68px 0 76px;
-}
-
-.home-faq h2 {
-  margin-bottom: 24px;
 }
 
 details {
@@ -533,11 +515,6 @@ details ul {
   padding-bottom: 4px;
 }
 
-.source-note {
-  color: var(--muted);
-  font-size: 16px !important;
-}
-
 .pricing-table-wrap {
   width: 100%;
 }
@@ -622,7 +599,6 @@ details ul {
   .site-header,
   .hero,
   .catalog,
-  .home-faq,
   .site-footer,
   .offer-page {
     width: min(100% - 28px, 1180px);
@@ -660,11 +636,6 @@ details ul {
     line-height: 1.04;
   }
 
-  .hero__lead {
-    margin-bottom: 14px;
-    font-size: 17px;
-  }
-
   .hero__button,
   .offer-card__actions .button,
   .offer-hero > .button,
@@ -681,8 +652,7 @@ details ul {
     margin-bottom: 20px;
   }
 
-  .catalog__heading h2,
-  .home-faq h2 {
+  .catalog__heading h2 {
     font-size: 35px;
   }
 
@@ -712,10 +682,6 @@ details ul {
 
   .offer-card__details {
     justify-content: center;
-  }
-
-  .home-faq {
-    padding: 48px 0 54px;
   }
 
   .site-footer {

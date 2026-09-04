@@ -83,7 +83,7 @@ if (!fs.existsSync(heroImagePath) || fs.statSync(heroImagePath).size > 700 * 102
 if (/eyebrow|offer-card__category|offer-card__saving|offer-saving/.test(home)) {
   fail("На главной остались бейджи");
 }
-if (home.includes("10 предложений") || home.includes("Цена и главное условие видны сразу")) {
+if (home.includes("10 предложений") || home.includes("Цена и главное условие видны сразу") || home.includes("Сразу видны цена и что входит") || home.includes("home-faq")) {
   fail("На главной остался удалённый служебный текст");
 }
 if (home.includes("от 19 900 ₽") || home.includes("Итог в ₽ — до оплаты")) {
@@ -142,7 +142,10 @@ if (!fs.existsSync(sitemapPath)) {
 const generatedText = [home, ...offers.map((offer) => {
   const file = path.join(root, "offers", offer.slug, "index.html");
   return fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
-})].join("\n");
+}), ...[
+  path.join(root, "lusiesta-studio", "index.html"),
+  path.join(root, "telegram-target-parser-5", "index.html")
+].map((file) => fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "")].join("\n");
 
 if (/цена аккаунта.{0,40}(?:равна|=).{0,10}(?:нулю|0)/i.test(generatedText)) {
   fail("Найдена запрещённая формулировка о нулевой цене аккаунта");
@@ -152,6 +155,9 @@ if (/pending_legal_review|riskLevel|legalStatus|policyWarning/.test(generatedTex
 }
 if (/исходный OpenAI API key|аккаунт OpenAI.{0,80}не переда|статус НДС|фиксированной наценки/i.test(generatedText)) {
   fail("В публичном HTML остались юридические или служебные оговорки");
+}
+if (/source-note|Перед покупкой|Блокировки аккаунтов возможны|Перепривязка лицензии возможна не чаще|Виртуальные Android-устройства находятся в разработке|Крупные версии после 5\.x могут продаваться отдельно|60 дней на возврат/i.test(generatedText)) {
+  fail("В публичном HTML остались удалённые пояснения или оговорки");
 }
 
 if (errors.length) {

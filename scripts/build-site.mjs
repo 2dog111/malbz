@@ -35,8 +35,8 @@ function head({ title, description, canonical, image, depth = 0 }) {
     <link rel="icon" type="image/png" sizes="64x64" href="${prefix}assets/favicon.png">
     <link rel="apple-touch-icon" href="${prefix}assets/apple-touch-icon.png">
     <link rel="preload" href="${prefix}assets/fonts/onest-cyrillic-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="${prefix}market.css?v=20260904-1">
-    <script src="${prefix}assets/site.js?v=20260904-1" defer></script>
+    <link rel="stylesheet" href="${prefix}market.css?v=20260904-2">
+    <script src="${prefix}assets/site.js?v=20260904-2" defer></script>
   </head>`;
 }
 
@@ -82,7 +82,7 @@ function renderHome() {
 <html lang="ru">
 ${head({
   title: "MaL.BZ — софт, реклама и услуги для малого бизнеса",
-  description: "ChatGPT, реклама, сайты и софт для малого бизнеса. Цена и состав каждого предложения сразу на карточке.",
+  description: "Предложения для малого бизнеса: ChatGPT, реклама, сайты и софт.",
   canonical: "https://mal.bz/",
   image: "assets/hero-marketplace-pencil-v2.png"
 })}
@@ -97,7 +97,6 @@ ${head({
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero__copy">
           <h1 id="hero-title">ChatGPT, реклама, сайты и софт для малого бизнеса</h1>
-          <p class="hero__lead">Сразу видны цена и что входит. Выбирайте предложение и пишите по нему в Telegram.</p>
           <a class="button button--primary hero__button" href="#offers">Выбрать предложение</a>
         </div>
         <picture class="hero__visual">
@@ -115,21 +114,6 @@ ${cards}
         </div>
       </section>
 
-      <section class="home-faq" aria-labelledby="faq-title">
-        <h2 id="faq-title">Перед покупкой</h2>
-        <details>
-          <summary>Как купить?</summary>
-          <p>Нажмите кнопку в карточке. Текст заявки скопируется, затем откроется Telegram.</p>
-        </details>
-        <details>
-          <summary>Что будет в сообщении?</summary>
-          <p>Название, цена, код оффера и ссылка на его страницу. Вам останется вставить текст в чат.</p>
-        </details>
-        <details>
-          <summary>Где посмотреть весь состав?</summary>
-          <p>Нажмите «Подробнее». На странице предложения собраны цена, состав и условия.</p>
-        </details>
-      </section>
     </main>
 
     <footer class="site-footer">
@@ -168,16 +152,12 @@ function renderSection(section) {
     ? `        <details class="feature-disclosure"><summary>Показать все возможности</summary>${itemList}</details>`
     : itemList ? `        ${itemList}` : "";
   const table = section.table ? renderTable(section.table) : "";
-  const source = section.source
-    ? `        <p class="source-note"><a href="${escapeHtml(section.source.url)}">${escapeHtml(section.source.label)}</a>. ${escapeHtml(section.source.note)}</p>`
-    : "";
   return `      <section class="detail-section">
         <h2>${escapeHtml(section.title)}</h2>
 ${paragraphs}
 ${steps}
 ${items}
 ${table}
-${source}
       </section>`;
 }
 
