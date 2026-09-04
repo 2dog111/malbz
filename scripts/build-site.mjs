@@ -35,8 +35,8 @@ function head({ title, description, canonical, image, depth = 0 }) {
     <link rel="icon" type="image/png" sizes="64x64" href="${prefix}assets/favicon.png">
     <link rel="apple-touch-icon" href="${prefix}assets/apple-touch-icon.png">
     <link rel="preload" href="${prefix}assets/fonts/onest-cyrillic-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="${prefix}market.css?v=20260901-3">
-    <script src="${prefix}assets/site.js?v=20260901-3" defer></script>
+    <link rel="stylesheet" href="${prefix}market.css?v=20260904-1">
+    <script src="${prefix}assets/site.js?v=20260904-1" defer></script>
   </head>`;
 }
 
@@ -82,7 +82,7 @@ function renderHome() {
 <html lang="ru">
 ${head({
   title: "MaL.BZ — софт, реклама и услуги для малого бизнеса",
-  description: "Софт, реклама и услуги для малого бизнеса по специальным ценам. Выберите предложение и сразу напишите по нему в Telegram.",
+  description: "ChatGPT, реклама, сайты и софт для малого бизнеса. Цена и состав каждого предложения сразу на карточке.",
   canonical: "https://mal.bz/",
   image: "assets/hero-marketplace-pencil-v2.png"
 })}
@@ -96,9 +96,9 @@ ${head({
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero__copy">
-          <h1 id="hero-title">Софт, реклама и услуги для малого бизнеса — по специальным ценам</h1>
-          <p class="hero__lead">Выберите предложение, посмотрите условия и сразу напишите по нему в Telegram.</p>
-          <a class="button button--primary hero__button" href="#offers">Смотреть предложения</a>
+          <h1 id="hero-title">ChatGPT, реклама, сайты и софт для малого бизнеса</h1>
+          <p class="hero__lead">Сразу видны цена и что входит. Выбирайте предложение и пишите по нему в Telegram.</p>
+          <a class="button button--primary hero__button" href="#offers">Выбрать предложение</a>
         </div>
         <picture class="hero__visual">
           <source srcset="assets/hero-marketplace-pencil-v2-720.webp 720w, assets/hero-marketplace-pencil-v2.webp 1200w" sizes="(max-width: 760px) calc(100vw - 28px), 560px" type="image/webp">
@@ -108,7 +108,7 @@ ${head({
 
       <section class="catalog" id="offers" aria-labelledby="offers-title">
         <div class="catalog__heading">
-          <h2 id="offers-title">Выберите подходящий оффер</h2>
+          <h2 id="offers-title">Предложения</h2>
         </div>
         <div class="offer-grid">
 ${cards}
@@ -118,16 +118,16 @@ ${cards}
       <section class="home-faq" aria-labelledby="faq-title">
         <h2 id="faq-title">Перед покупкой</h2>
         <details>
-          <summary>Как начать покупку?</summary>
-          <p>Нажмите основную кнопку в карточке. Текст заявки скопируется, затем откроется Telegram.</p>
+          <summary>Как купить?</summary>
+          <p>Нажмите кнопку в карточке. Текст заявки скопируется, затем откроется Telegram.</p>
         </details>
         <details>
           <summary>Что будет в сообщении?</summary>
           <p>Название, цена, код оффера и ссылка на его страницу. Вам останется вставить текст в чат.</p>
         </details>
         <details>
-          <summary>Где посмотреть полный состав?</summary>
-          <p>Нажмите «Подробнее» в нужной карточке. На странице оффера собраны условия и состав предложения.</p>
+          <summary>Где посмотреть весь состав?</summary>
+          <p>Нажмите «Подробнее». На странице предложения собраны цена, состав и условия.</p>
         </details>
       </section>
     </main>

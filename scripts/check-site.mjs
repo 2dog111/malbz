@@ -43,6 +43,7 @@ for (const offer of offers) {
     if (!(field in offer)) fail(`${offer.id || offer.slug}: отсутствует поле ${field}`);
   }
   if (offer.status !== "published") fail(`${offer.id}: предложение не опубликовано`);
+  if (/^(?:от\s|итог\b)/i.test(offer.currentPrice)) fail(`${offer.id}: цена должна быть конкретной`);
   if (!Array.isArray(offer.keyFacts) || offer.keyFacts.length < 1 || offer.keyFacts.length > 3) {
     fail(`${offer.id}: keyFacts должно содержать от 1 до 3 пунктов`);
   }
@@ -68,7 +69,7 @@ for (const offer of offers) {
 const homePath = path.join(root, "index.html");
 if (!fs.existsSync(homePath)) fail("Не создан index.html");
 const home = fs.existsSync(homePath) ? fs.readFileSync(homePath, "utf8") : "";
-const exactHero = "Софт, реклама и услуги для малого бизнеса — по специальным ценам";
+const exactHero = "ChatGPT, реклама, сайты и софт для малого бизнеса";
 if (!home.includes(exactHero)) fail("На главной нет утверждённого H1");
 if ((home.match(/<article class="offer-card"/g) || []).length !== 10) fail("На главной не 10 карточек");
 if (home.includes("data-filter") || /featured|recommended|рекомендуем/i.test(home)) fail("На главной остались фильтры или выделенная подборка");
@@ -84,6 +85,9 @@ if (/eyebrow|offer-card__category|offer-card__saving|offer-saving/.test(home)) {
 }
 if (home.includes("10 предложений") || home.includes("Цена и главное условие видны сразу")) {
   fail("На главной остался удалённый служебный текст");
+}
+if (home.includes("от 19 900 ₽") || home.includes("Итог в ₽ — до оплаты")) {
+  fail("На главной осталась неконкретная цена");
 }
 if ((home.match(/supplier-link/g) || []).length !== 1 || home.indexOf("supplier-link") < home.indexOf("<footer")) {
   fail("Ссылка поставщика должна быть одна и только в подвале");

@@ -161,10 +161,10 @@ li {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
-  padding: 44px 0 56px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.9fr);
+  padding: 30px 0 34px;
   align-items: center;
-  gap: 28px;
+  gap: 24px;
 }
 
 .hero__copy {
@@ -173,7 +173,10 @@ li {
 
 .hero__visual {
   display: block;
+  width: 100%;
+  max-width: 480px;
   min-width: 0;
+  justify-self: end;
 }
 
 .hero__visual img {
@@ -183,16 +186,16 @@ li {
 }
 
 .hero h1 {
-  max-width: 19ch;
-  margin-bottom: 20px;
-  font-size: clamp(44px, 6vw, 74px);
+  max-width: 17ch;
+  margin-bottom: 16px;
+  font-size: clamp(42px, 5vw, 62px);
 }
 
 .hero__lead {
-  max-width: 60ch;
-  margin-bottom: 28px;
+  max-width: 52ch;
+  margin-bottom: 20px;
   color: var(--muted);
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.48;
 }
 
@@ -229,7 +232,7 @@ li {
 }
 
 .catalog {
-  padding: 58px 0 30px;
+  padding: 34px 0 30px;
   border-top: 1px solid var(--line);
 }
 
@@ -641,23 +644,24 @@ details ul {
   .hero {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 22px 0 28px;
-    gap: 18px;
+    padding: 16px 0 22px;
+    gap: 10px;
   }
 
   .hero__visual {
-    width: min(100%, 560px);
+    width: min(100%, 280px);
     margin-inline: auto;
+    justify-self: center;
   }
 
   .hero h1 {
-    margin-bottom: 13px;
-    font-size: clamp(36px, 9.3vw, 42px);
+    margin-bottom: 10px;
+    font-size: clamp(32px, 8.6vw, 38px);
     line-height: 1.04;
   }
 
   .hero__lead {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     font-size: 17px;
   }
 
@@ -669,7 +673,7 @@ details ul {
   }
 
   .catalog {
-    padding-top: 26px;
+    padding-top: 22px;
   }
 
   .catalog__heading {
